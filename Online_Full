@@ -38,6 +38,7 @@ ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
 ruleset=🎯 全球直连,[]GEOIP,CN
 ruleset=🐟 漏网之鱼,[]FINAL
+ruleset=🏦 交易所,https://raw.githubusercontent.com/QuincySx/CustomRules/master/Exchange.list
 ;设置规则标志位
 
 ;设置分组标志位
