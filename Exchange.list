@@ -10,3 +10,8 @@ DOMAIN-SUFFIX,huobi.com
 DOMAIN-SUFFIX,debank.com
 DOMAIN-SUFFIX,zapper.fi
 DOMAIN-SUFFIX,uniswap.org
+
+DOMAIN-SUFFIX,kswap.finance // kswap
+DOMAIN-SUFFIX,coingecko.com // coingecko
+DOMAIN-SUFFIX,coinmarketcap.com // coinmarketcap
+DOMAIN-SUFFIX,tradingview.com // tradingview
