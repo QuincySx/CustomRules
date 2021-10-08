@@ -4,6 +4,7 @@ DOMAIN-KEYWORD,binance
 DOMAIN-KEYWORD,huobi
 DOMAIN-KEYWORD,uniswap
 DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,okex.me
 DOMAIN-SUFFIX,huobi.com
@@ -16,3 +17,22 @@ DOMAIN-SUFFIX,coingecko.com // coingecko
 DOMAIN-SUFFIX,coinmarketcap.com // coinmarketcap
 DOMAIN-SUFFIX,tradingview.com // tradingview
 DOMAIN-SUFFIX,cryptocompare.com // cryptocompare
+
+DOMAIN-SUFFIX,zks.app
+DOMAIN-SUFFIX,zks.org
+DOMAIN-SUFFIX,loopring.org
+DOMAIN-SUFFIX,loopring.io
+DOMAIN-SUFFIX,loopring.network
+DOMAIN-SUFFIX,ipdata.co
+DOMAIN-SUFFIX,api.loopring.network
+
+DOMAIN-SUFFIX,token.im
+DOMAIN-SUFFIX,tongke.top
+DOMAIN-SUFFIX,tongke.co
+DOMAIN-SUFFIX,tokenlon.im
+
+DOMAIN-SUFFIX,onekey-asset.com
+DOMAIN-SUFFIX,onekey.so
+
+DOMAIN-SUFFIX,qkl123.com
+DOMAIN-SUFFIX,feixiaohao.co
