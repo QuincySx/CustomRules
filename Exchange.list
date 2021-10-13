@@ -4,16 +4,18 @@ DOMAIN-KEYWORD,binance
 DOMAIN-KEYWORD,huobi
 DOMAIN-KEYWORD,uniswap
 DOMAIN-KEYWORD,onekey
+DOMAIN-KEYWORD,bybit
 
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,okex.me
 DOMAIN-SUFFIX,huobi.com
+DOMAIN-SUFFIX,bybit.com
+
 DOMAIN-SUFFIX,debank.com
 DOMAIN-SUFFIX,zapper.fi
 DOMAIN-SUFFIX,uniswap.org
-
 DOMAIN-SUFFIX,kswap.finance // kswap
 DOMAIN-SUFFIX,coingecko.com // coingecko
 DOMAIN-SUFFIX,coinmarketcap.com // coinmarketcap
