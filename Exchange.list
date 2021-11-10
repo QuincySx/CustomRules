@@ -1,3 +1,6 @@
+# Crypto Wallet
+DOMAIN-SUFFIX,ckb.pw
+
 # Crypto Exchange
 DOMAIN-KEYWORD,okex
 DOMAIN-KEYWORD,binance
