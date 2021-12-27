@@ -1,4 +1,6 @@
 # Disney+
+USER-AGENT,Disney+*
+
 DOMAIN-KEYWORD,disneyplus
 
 DOMAIN-SUFFIX,com.disney.disneyplus
