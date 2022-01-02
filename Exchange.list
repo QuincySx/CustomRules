@@ -9,6 +9,9 @@ DOMAIN-KEYWORD,uniswap
 DOMAIN-KEYWORD,onekey
 DOMAIN-KEYWORD,bybit
 
+DOMAIN-SUFFIX,etherscan.io
+DOMAIN-SUFFIX,bscscan.com
+
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,okex.com
