@@ -8,6 +8,7 @@ DOMAIN-KEYWORD,huobi
 DOMAIN-KEYWORD,uniswap
 DOMAIN-KEYWORD,onekey
 DOMAIN-KEYWORD,bybit
+DOMAIN-KEYWORD,isafepal
 
 DOMAIN-SUFFIX,etherscan.io
 DOMAIN-SUFFIX,bscscan.com
@@ -19,6 +20,7 @@ DOMAIN-SUFFIX,okex.me
 DOMAIN-SUFFIX,okx.me
 DOMAIN-SUFFIX,huobi.com
 DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,isafepal.com
 
 DOMAIN-SUFFIX,debank.com
 DOMAIN-SUFFIX,zapper.fi
