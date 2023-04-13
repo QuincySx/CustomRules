@@ -1,0 +1,18 @@
+# Chrome Update Check
+DOMAIN-SUFFIX,dl.google.com
+DOMAIN-SUFFIX,tools.google.com
+DOMAIN-SUFFIX,tools.l.google.com
+
+# Google Login
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,fonts.gstatic.com
+
+# Chrome Upgrade
+DOMAIN-SUFFIX,fonts.googleapis.com
+DOMAIN-SUFFIX,update.googleapis.com
+
+# Google Play
+DOMAIN-SUFFIX,android.googleapis.com
+DOMAIN-SUFFIX,play.googleapis.com
+DOMAIN-SUFFIX,services.googleapis.cn
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
