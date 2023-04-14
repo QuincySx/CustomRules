@@ -734,3 +734,4 @@ fake-ip-filter:
   - "*.pwc.com"
   - "*.pwcinternal.com"
   - "*.pwczhongtian.cn"
+  - "+.slack.com"

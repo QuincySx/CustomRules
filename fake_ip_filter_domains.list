@@ -777,3 +777,5 @@ stackoverflow.com
 *.pwc.com
 *.pwcinternal.com
 *.pwczhongtian.cn
+#放行 Slack
++.slack.com
