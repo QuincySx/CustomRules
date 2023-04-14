@@ -137,7 +137,7 @@ fake-ip-filter:
   - "*.pwc.com"
   - "*.pwcinternal.com"
   - "*.pwczhongtian.cn"
-    - "+.13th.tech"
+  - "+.13th.tech"
   - "+.423down.com"
   - "+.bokecc.com"
   - "+.chaipip.com"
