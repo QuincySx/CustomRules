@@ -135,7 +135,8 @@ Mijia Cloud
 local.adguard.org
 #迅雷
 +.sandai.net
-+.n0808.com+.13th.tech
++.n0808.com
++.13th.tech
 +.423down.com
 +.bokecc.com
 +.chaipip.com
@@ -731,7 +732,8 @@ local.adguard.org
 +.zhihu.com
 +.zhimg.com
 +.zhongsou.com
-+.zhuihd.com#放行 Github
++.zhuihd.com
+#放行 Github
 github.com
 *.github.com
 *.github.dev
