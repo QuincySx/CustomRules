@@ -90,6 +90,7 @@ fake-ip-filter:
   - swdist.apple.com
   - lens.l.google.com
   - stun.l.google.com
+  - na.b.g-tun.com
   - "+.nflxvideo.net"
   - "*.square-enix.com"
   - "*.finalfantasyxiv.com"
