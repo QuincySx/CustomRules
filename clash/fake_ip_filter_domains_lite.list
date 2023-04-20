@@ -155,11 +155,16 @@ local.adguard.org
 +.inkuai.com
 +.bytedanceapi.com
 +.kuaishouzt.com
++.tencentmusic.com
 +.cmbchina.com
 +.bankcomm.com
 +.yumchina.com
 +.lkcoffee.com
 +.luckincoffeecdn.com
++.anticheatexpert.com
++.tcdnos.com
++.dcloudstc.com
++.gcloudsdk.com
 #放行 Github
 github.com
 *.github.com
