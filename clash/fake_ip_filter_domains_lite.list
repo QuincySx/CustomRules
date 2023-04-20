@@ -146,6 +146,20 @@ local.adguard.org
 +.xiaoyuzhoufm.com
 +.xyzcdn.net
 +.boohee.com
++.pinduoduo.net
++.pddpic.com
++.aliyundrive.net
++.alibabadns.com
++.vzuu.com
++.volcgtm.com
++.inkuai.com
++.bytedanceapi.com
++.kuaishouzt.com
++.cmbchina.com
++.bankcomm.com
++.yumchina.com
++.lkcoffee.com
++.luckincoffeecdn.com
 #放行 Github
 github.com
 *.github.com
