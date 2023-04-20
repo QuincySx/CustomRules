@@ -14,3 +14,30 @@ DOMAIN-SUFFIX,xyzcdn.net
 
 # 薄荷健康
 DOMAIN-SUFFIX,boohee.com
+
+# Pinduoduo
+DOMAIN-SUFFIX,pinduoduo.net
+DOMAIN-SUFFIX,pddpic.com
+
+# 阿里云盘
+DOMAIN-SUFFIX,aliyundrive.net
+DOMAIN-SUFFIX,alibabadns.com
+
+# 知乎
+DOMAIN-SUFFIX,vzuu.com
+DOMAIN-SUFFIX,volcgtm.com
+DOMAIN-SUFFIX,inkuai.com
+DOMAIN-SUFFIX,bytedanceapi.com
+DOMAIN-SUFFIX,kuaishouzt.com
+
+# 招行
+DOMAIN-SUFFIX,cmbchina.com
+
+# 交通
+DOMAIN-SUFFIX,bankcomm.com
+
+DOMAIN-SUFFIX,yumchina.com
+
+# 瑞幸
+DOMAIN-SUFFIX,lkcoffee.com
+DOMAIN-SUFFIX,luckincoffeecdn.com
