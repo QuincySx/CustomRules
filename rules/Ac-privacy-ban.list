@@ -1,3 +1,21 @@
-# install app check
+# miui install app check
 DOMAIN-SUFFIX,api.installer.xiaomi.com
+
+# miui sec
+DOMAIN-SUFFIX,etl.xlmc.sec.miui.com
+DOMAIN-SUFFIX,flash.sec.miui.com
+DOMAIN-SUFFIX,api.sec.miui.com
+DOMAIN-SUFFIX,a0.app.xiaomi.com
+DOMAIN-SUFFIX,tracking.miui.com
+
+# avl
+DOMAIN-SUFFIX,miui-fxcse.avlyun.com
+DOMAIN-SUFFIX,sdkconf.avlyun.com
+DOMAIN-SUFFIX,sdkconf.avlyun.com
+DOMAIN-SUFFIX,miav-cse.avlyun.com
+DOMAIN-SUFFIX,update.avlyun.sec.miui.com
+DOMAIN-SUFFIX,ixav-cse.avlyun.com
+DOMAIN-SUFFIX,logupdate.avlyun.sec.miui.com
+
+# weixin keyboard
 DOMAIN-SUFFIX,wetype.weixin.qq.com
