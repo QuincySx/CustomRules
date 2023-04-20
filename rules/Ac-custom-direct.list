@@ -30,6 +30,9 @@ DOMAIN-SUFFIX,inkuai.com
 DOMAIN-SUFFIX,bytedanceapi.com
 DOMAIN-SUFFIX,kuaishouzt.com
 
+# QQ 音乐
+DOMAIN-SUFFIX,tencentmusic.com
+
 # 招行
 DOMAIN-SUFFIX,cmbchina.com
 
