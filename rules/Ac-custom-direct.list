@@ -44,3 +44,9 @@ DOMAIN-SUFFIX,yumchina.com
 # 瑞幸
 DOMAIN-SUFFIX,lkcoffee.com
 DOMAIN-SUFFIX,luckincoffeecdn.com
+
+# 腾讯游戏
+DOMAIN-SUFFIX,anticheatexpert.com
+DOMAIN-SUFFIX,tcdnos.com
+DOMAIN-SUFFIX,dcloudstc.com
+DOMAIN-SUFFIX,gcloudsdk.com
