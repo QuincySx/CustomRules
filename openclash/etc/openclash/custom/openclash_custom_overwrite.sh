@@ -11,47 +11,47 @@ LOGTIME=$(echo $(date "+%Y-%m-%d %H:%M:%S"))
 LOG_FILE="/tmp/openclash.log"
 CONFIG_FILE="$1" #config path
 
-     ruby -ryaml -rYAML -I "/usr/share/openclash" -E UTF-8 -e "
-      puts '${LOGTIME} Modify: dns.proxy-server-nameserver';
+    ruby -ryaml -rYAML -I "/usr/share/openclash" -E UTF-8 -e "
+    puts '${LOGTIME} Modify: dns.proxy-server-nameserver';
+    
+    begin
+      Value = YAML.load_file('$CONFIG_FILE');
+    rescue Exception => e
+      puts '${LOGTIME} Error: Load File Failed,【' + e.message + '】';
+    end;
+
+    begin
+    Thread.new{
+      Value_1={
+        'default-nameserver'=>['192.168.1.1','223.5.5.5'],
+        'nameserver'=>['tls://8.8.8.8#Dns','quic://a.vvvglass.com#Dns','https://dns.cloudflare.com/dns-query#Dns'],
+        'proxy-server-nameserver'=>['quic://b.iqiq.io','https://doh.pub/dns-query'],
+        'nameserver-policy'=>{
+          'geosite:cn,private'=>['192.168.1.1', '223.5.5.5', 'https://dns.alidns.com/dns-query']
+        }
+      };
+
+      Value['dns']['default-nameserver'] = Value_1['default-nameserver'].uniq;
       
-      begin
-        Value = YAML.load_file('$CONFIG_FILE');
-      rescue Exception => e
-        puts '${LOGTIME} Error: Load File Failed,【' + e.message + '】';
-      end;
+      Value['dns']['nameserver'] = Value_1['nameserver'].uniq;
+      
+      Value['dns']['nameserver-policy'] ||= {}
+      Value_1['nameserver-policy'].each do |k, v|
+        Value['dns']['nameserver-policy'][k] ||= []
+        Value['dns']['nameserver-policy'][k] += v
+        Value['dns']['nameserver-policy'][k].uniq!
+      end
+      
+      Value['dns']['proxy-server-nameserver'] = Value_1['proxy-server-nameserver'].uniq;
+      
+      Value['dns'].delete('fallback')
+    }.join;
 
-      begin
-      Thread.new{
-        Value_1={
-          'default-nameserver'=>['192.168.1.1','223.5.5.5'],
-          'nameserver'=>['tls://8.8.8.8#Dns','quic://a.vvvglass.com#Dns','https://dns.cloudflare.com/dns-query#Dns'],
-          'proxy-server-nameserver'=>['quic://b.iqiq.io','https://doh.pub/dns-query'],
-          'nameserver-policy'=>{
-            'geosite:cn,private'=>['192.168.1.1', '223.5.5.5', 'https://dns.alidns.com/dns-query']
-          }
-        };
-
-        Value['dns']['default-nameserver'] = Value_1['default-nameserver'].uniq;
-        
-        Value['dns']['nameserver'] = Value_1['nameserver'].uniq;
-        
-        Value['dns']['nameserver-policy'] ||= {}
-        Value_1['nameserver-policy'].each do |k, v|
-          Value['dns']['nameserver-policy'][k] ||= []
-          Value['dns']['nameserver-policy'][k] += v
-          Value['dns']['nameserver-policy'][k].uniq!
-        end
-        
-        Value['dns']['proxy-server-nameserver'] = Value_1['proxy-server-nameserver'].uniq;
-        
-        Value['dns'].delete('fallback')
-      }.join;
-
-      rescue Exception => e
-        puts '${LOGTIME} Error: Set General Failed,【' + e.message + '】';
-      ensure
-        File.open('$CONFIG_FILE','w') {|f| YAML.dump(Value, f)};
-      end" 2>/dev/null >> $LOG_FILE
+    rescue Exception => e
+      puts '${LOGTIME} Error: Set General Failed,【' + e.message + '】';
+    ensure
+      File.open('$CONFIG_FILE','w') {|f| YAML.dump(Value, f)};
+    end" 2>/dev/null >> $LOG_FILE
 
 
 #Simple Demo:
