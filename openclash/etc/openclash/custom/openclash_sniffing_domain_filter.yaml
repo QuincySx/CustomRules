@@ -1,0 +1,7 @@
+skip-domain:
+  - '+.apple.com'
+  - 'Mijia Cloud'
+  - dlg.io.mi.com
+  - '+.jd.com'
+  - '+.vivox.com'
+  - 'stackoverflow.com'

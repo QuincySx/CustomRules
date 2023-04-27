@@ -1,0 +1,8 @@
+force-domain:
+#  - '+'
+  - '+.netflix.com'
+  - '+.nflxvideo.net'
+  - '+.amazonaws.com'
+  - '+.github.com'
+  - '+.githubusercontent.com'
+  - '+.media.dssott.com'

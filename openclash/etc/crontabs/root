@@ -1,0 +1,5 @@
+0 0 * * 6 /usr/share/openclash/openclash.sh
+0 3 * * 6 /usr/share/openclash/openclash_ipdb.sh
+0 3 * * 6 /usr/share/openclash/openclash_geosite.sh
+0 3 * * 6 /usr/share/openclash/openclash_geoip.sh
+0 3 * * 6 /usr/share/openclash/openclash_chnroute.sh
