@@ -7,6 +7,9 @@ DOMAIN-SUFFIX,stripe.com
 # Google Bard
 DOMAIN-SUFFIX,bard.google.com
 
+# Anthropic Claude
+DOMAIN-SUFFIX,anthropic.com
+
 # New Bing
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,outlook.com
