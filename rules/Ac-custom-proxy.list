@@ -16,3 +16,6 @@ DOMAIN-SUFFIX,android.googleapis.com
 DOMAIN-SUFFIX,play.googleapis.com
 DOMAIN-SUFFIX,services.googleapis.cn
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+
+# Piclist
+DOMAIN-SUFFIX,piclist.cn
