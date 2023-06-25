@@ -51,3 +51,7 @@ DOMAIN-SUFFIX,anticheatexpert.com
 DOMAIN-SUFFIX,tcdnos.com
 DOMAIN-SUFFIX,dcloudstc.com
 DOMAIN-SUFFIX,gcloudsdk.com
+
+# 东奥在线
+DOMAIN-SUFFIX,dongaocloud.com
+DOMAIN-SUFFIX,dongao.com
