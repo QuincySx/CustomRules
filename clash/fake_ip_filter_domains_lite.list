@@ -166,6 +166,8 @@ local.adguard.org
 +.tcdnos.com
 +.dcloudstc.com
 +.gcloudsdk.com
++.dongaocloud.com
++.dongao.com
 #放行 Github
 github.com
 *.github.com
