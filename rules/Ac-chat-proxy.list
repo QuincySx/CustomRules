@@ -14,3 +14,6 @@ DOMAIN-SUFFIX,claude.ai
 # New Bing
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,outlook.com
+
+# JetBrains AI Assistant
+DOMAIN-SUFFIX,grazie.ai
