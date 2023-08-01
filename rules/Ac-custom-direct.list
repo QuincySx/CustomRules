@@ -55,3 +55,6 @@ DOMAIN-SUFFIX,gcloudsdk.com
 # 东奥在线
 DOMAIN-SUFFIX,dongaocloud.com
 DOMAIN-SUFFIX,dongao.com
+
+# Alist 阿里云 OAUTH
+DOMAIN-SUFFIX,xhofe.top
