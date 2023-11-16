@@ -6,6 +6,11 @@ DOMAIN-SUFFIX,stripe.com
 # ChatGPT CDN
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
+# ChatGPT Event
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,challenges.cloudflare.com
 
 # Google Bard
 DOMAIN-SUFFIX,bard.google.com
