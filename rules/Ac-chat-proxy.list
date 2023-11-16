@@ -3,7 +3,9 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chat.openai.com
 # Pay https://twitter.com/haoel/status/1625117664896229377?s=20
 DOMAIN-SUFFIX,stripe.com
+# ChatGPT CDN
 DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
 
 # Google Bard
 DOMAIN-SUFFIX,bard.google.com
