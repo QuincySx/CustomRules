@@ -59,10 +59,6 @@ DOMAIN-SUFFIX,dongao.com
 # Alist 阿里云 OAUTH
 DOMAIN-SUFFIX,xhofe.top
 
-# Vrmoo 魔趣
-DOMAIN-SUFFIX,3ppp.top
-DOMAIN-SUFFIX,vrmoo.net
-
 # TV Box Interface
 DOMAIN-SUFFIX,67.237
 DOMAIN-SUFFIX,agit.ai
