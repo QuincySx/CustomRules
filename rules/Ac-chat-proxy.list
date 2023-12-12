@@ -3,6 +3,7 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chat.openai.com
 # Pay https://twitter.com/haoel/status/1625117664896229377?s=20
 DOMAIN-SUFFIX,stripe.com
+
 # Openai CDN
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
@@ -20,3 +21,7 @@ DOMAIN-SUFFIX,outlook.com
 
 # JetBrains AI Assistant
 DOMAIN-SUFFIX,grazie.ai
+
+# Maxon C4D
+DOMAIN-SUFFIX,maxon.net
+DOMAIN-SUFFIX,maxon.com
