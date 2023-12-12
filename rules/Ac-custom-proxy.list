@@ -22,10 +22,6 @@ DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com
 # Piclist
 DOMAIN-SUFFIX,piclist.cn
 
-# Maxon C4D
-DOMAIN-SUFFIX,maxon.net
-DOMAIN-SUFFIX,maxon.com
-
 # VRChat
 DOMAIN-SUFFIX,exitgames.com
 IP-CIDR,92.38.173.0/24,no-resolve
