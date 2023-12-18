@@ -228,6 +228,10 @@ local.adguard.org
 +.kkvip2022.com
 +.quankan.app
 +.aidouer.net
++.awmdm.com
++.pwc.com
++.pwcinternal.com
++.pwczhongtian.cn
 #放行 Github
 github.com
 *.github.com
