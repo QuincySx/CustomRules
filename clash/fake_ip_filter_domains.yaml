@@ -291,6 +291,8 @@ fake-ip-filter:
   - "+.biliapi.com"
   - "+.biliapi.net"
   - "+.bilibili.com"
+  - "+.bilibili.co"
+  - "+.biliintl.co"
   - "+.biligame.com"
   - "+.biligame.net"
   - "+.bilivideo.com"
