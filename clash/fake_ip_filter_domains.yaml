@@ -61,6 +61,7 @@ fake-ip-filter:
   - "+.tencent.com"
   - "+.srv.nintendo.net"
   - "*.n.n.srv.nintendo.net"
+  - "+.cdn.nintendo.net"
   - "+.stun.playstation.net"
   - xbox.*.*.microsoft.com
   - "*.*.xboxlive.com"
@@ -106,6 +107,8 @@ fake-ip-filter:
   - local.adguard.org
   - "+.sandai.net"
   - "+.n0808.com"
+  - "+.uu.163.com"
+  - ps.res.netease.com
   - "+.zsxq.com"
   - "+.luojilab.com"
   - "+.umiwi.com"
