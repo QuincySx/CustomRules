@@ -8,8 +8,9 @@ DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 
-# Google Bard
+# Google Bard & Gemini
 DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
 
 # Anthropic Claude
 DOMAIN-SUFFIX,anthropic.com
