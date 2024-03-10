@@ -1,5 +1,6 @@
 # ChatGPT
 DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chat.openai.com
 # Pay https://twitter.com/haoel/status/1625117664896229377?s=20
 DOMAIN-SUFFIX,stripe.com
