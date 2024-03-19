@@ -59,6 +59,9 @@ DOMAIN-SUFFIX,dongao.com
 # Alist 阿里云 OAUTH
 DOMAIN-SUFFIX,xhofe.top
 
+# 资源站
+DOMAIN-SUFFIX,qzdcg.com
+
 # TV Box Interface
 DOMAIN-SUFFIX,67.237
 DOMAIN-SUFFIX,agit.ai
