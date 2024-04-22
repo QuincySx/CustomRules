@@ -142,6 +142,7 @@ fake-ip-filter:
   - "+.dongao.com"
   - "+.xhofe.top"
   - "+.qzdcg.com"
+  - "+.gitee.com"
   - "+.67.237"
   - "+.agit.ai"
   - "+.xhww.fun"
