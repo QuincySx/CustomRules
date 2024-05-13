@@ -238,6 +238,8 @@ ps.res.netease.com
 +.pwc.com
 +.pwcinternal.com
 +.pwczhongtian.cn
++.deepseek.com
++.isealsuite.com
 #放行 Github
 github.com
 *.github.com

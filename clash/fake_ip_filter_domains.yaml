@@ -206,6 +206,8 @@ fake-ip-filter:
   - "+.pwc.com"
   - "+.pwcinternal.com"
   - "+.pwczhongtian.cn"
+  - "+.deepseek.com"
+  - "+.isealsuite.com"
   - "+.13th.tech"
   - "+.423down.com"
   - "+.bokecc.com"
