@@ -56,9 +56,6 @@ DOMAIN-SUFFIX,gcloudsdk.com
 DOMAIN-SUFFIX,dongaocloud.com
 DOMAIN-SUFFIX,dongao.com
 
-# Alist 阿里云 OAUTH
-DOMAIN-SUFFIX,xhofe.top
-
 # 资源站
 DOMAIN-SUFFIX,qzdcg.com
 
@@ -133,7 +130,42 @@ DOMAIN-SUFFIX,pwc.com
 DOMAIN-SUFFIX,pwcinternal.com
 DOMAIN-SUFFIX,pwczhongtian.cn
 
+# Deepseek 大模型
 DOMAIN-SUFFIX,deepseek.com
 DOMAIN-SUFFIX,isealsuite.com
 
+# 生财
 DOMAIN-SUFFIX,scys.com
+# ToDesk 远程控制
+DOMAIN-SUFFIX,todesk.com
+# 多抓鱼
+DOMAIN-SUFFIX,duozhuayu.com
+# 乐刻
+DOMAIN-SUFFIX,leoao.com
+DOMAIN-SUFFIX,leoao-inc.com
+# 网易
+DOMAIN-SUFFIX,netease.im
+# 即刻
+DOMAIN-SUFFIX,codefuture.top
+# 七牛影音
+DOMAIN-SUFFIX,pouquiagievu.com
+DOMAIN-SUFFIX,pouquiagievu.com
+# 即刻帮
+DOMAIN-SUFFIX,geekbang.org
+# 得到
+DOMAIN-SUFFIX,cpatrk.net
+# 有赞云
+DOMAIN-SUFFIX,youzanyun.com
+# 咸鱼
+DOMAIN-SUFFIX,goofish.com
+DOMAIN-SUFFIX,effirst.com
+# 阿里 Alist 阿里云 OAUTH
+DOMAIN-SUFFIX,xhofe.top
+DOMAIN-SUFFIX,alibaba-inc.com
+DOMAIN-SUFFIX,alipan.com
+# 转转
+DOMAIN-SUFFIX,zhuanzhuan.com
+# 百度服务
+DOMAIN-SUFFIX,bcelive.com
+# 爱站
+DOMAIN-SUFFIX,aizhan.com
