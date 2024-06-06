@@ -1,7 +1,10 @@
 # 知识星球
 DOMAIN-SUFFIX,zsxq.com
+# 生财
+DOMAIN-SUFFIX,scys.com
 
 # 得到
+DOMAIN-SUFFIX,cpatrk.net
 DOMAIN-SUFFIX,luojilab.com
 DOMAIN-SUFFIX,umiwi.com
 DOMAIN-SUFFIX,zijieapi.com
@@ -19,7 +22,12 @@ DOMAIN-SUFFIX,boohee.com
 DOMAIN-SUFFIX,pinduoduo.net
 DOMAIN-SUFFIX,pddpic.com
 
+# 阿里 Alist 阿里云 OAUTH
+DOMAIN-SUFFIX,xhofe.top
+DOMAIN-SUFFIX,alibaba-inc.com
+
 # 阿里云盘
+DOMAIN-SUFFIX,alipan.com
 DOMAIN-SUFFIX,aliyundrive.net
 DOMAIN-SUFFIX,alibabadns.com
 
@@ -134,8 +142,6 @@ DOMAIN-SUFFIX,pwczhongtian.cn
 DOMAIN-SUFFIX,deepseek.com
 DOMAIN-SUFFIX,isealsuite.com
 
-# 生财
-DOMAIN-SUFFIX,scys.com
 # ToDesk 远程控制
 DOMAIN-SUFFIX,todesk.com
 # 多抓鱼
@@ -149,20 +155,13 @@ DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,codefuture.top
 # 七牛影音
 DOMAIN-SUFFIX,pouquiagievu.com
-DOMAIN-SUFFIX,pouquiagievu.com
 # 即刻帮
 DOMAIN-SUFFIX,geekbang.org
-# 得到
-DOMAIN-SUFFIX,cpatrk.net
 # 有赞云
 DOMAIN-SUFFIX,youzanyun.com
 # 咸鱼
 DOMAIN-SUFFIX,goofish.com
 DOMAIN-SUFFIX,effirst.com
-# 阿里 Alist 阿里云 OAUTH
-DOMAIN-SUFFIX,xhofe.top
-DOMAIN-SUFFIX,alibaba-inc.com
-DOMAIN-SUFFIX,alipan.com
 # 转转
 DOMAIN-SUFFIX,zhuanzhuan.com
 # 百度服务
