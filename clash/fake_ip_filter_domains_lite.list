@@ -142,6 +142,9 @@ local.adguard.org
 +.uu.163.com
 ps.res.netease.com
 +.zsxq.com
++.scys.com
++.shengcaiyoushu.com
++.cpatrk.net
 +.luojilab.com
 +.umiwi.com
 +.zijieapi.com
@@ -152,6 +155,9 @@ ps.res.netease.com
 +.boohee.com
 +.pinduoduo.net
 +.pddpic.com
++.xhofe.top
++.alibaba-inc.com
++.alipan.com
 +.aliyundrive.net
 +.alibabadns.com
 +.vzuu.com
@@ -172,7 +178,6 @@ ps.res.netease.com
 +.gcloudsdk.com
 +.dongaocloud.com
 +.dongao.com
-+.xhofe.top
 +.qzdcg.com
 +.gitee.com
 +.67.237
@@ -240,6 +245,20 @@ ps.res.netease.com
 +.pwczhongtian.cn
 +.deepseek.com
 +.isealsuite.com
++.todesk.com
++.duozhuayu.com
++.leoao.com
++.leoao-inc.com
++.netease.im
++.codefuture.top
++.pouquiagievu.com
++.geekbang.org
++.youzanyun.com
++.goofish.com
++.effirst.com
++.zhuanzhuan.com
++.bcelive.com
++.aizhan.com
 #放行 Github
 github.com
 *.github.com
