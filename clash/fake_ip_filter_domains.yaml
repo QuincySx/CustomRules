@@ -783,3 +783,4 @@ fake-ip-filter:
   - "*.pwc.com"
   - "*.pwcinternal.com"
   - "*.pwczhongtian.cn"
+  - "*.coze.com"
