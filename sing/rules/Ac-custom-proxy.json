@@ -1,0 +1,23 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        "dl.google.com",
+        "tools.google.com",
+        "tools.l.google.com",
+        "gstatic.com",
+        "fonts.gstatic.com",
+        "fonts.googleapis.com",
+        "update.googleapis.com",
+        "android.googleapis.com",
+        "play.googleapis.com",
+        "services.googleapis.cn",
+        "xn--ngstr-lra8j.com",
+        "xn--ngstr-cn-8za9o.com",
+        "piclist.cn",
+        "exitgames.com"
+      ]
+    }
+  ],
+  "version": 2
+}

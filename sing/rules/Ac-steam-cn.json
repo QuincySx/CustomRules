@@ -1,0 +1,10 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        "steamserver.net"
+      ]
+    }
+  ],
+  "version": 2
+}

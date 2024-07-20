@@ -1,0 +1,11 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        "unisats.io",
+        "steamact.com"
+      ]
+    }
+  ],
+  "version": 2
+}

@@ -1,0 +1,23 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        "api.installer.xiaomi.com",
+        "etl.xlmc.sec.miui.com",
+        "flash.sec.miui.com",
+        "api.sec.miui.com",
+        "a0.app.xiaomi.com",
+        "tracking.miui.com",
+        "miui-fxcse.avlyun.com",
+        "sdkconf.avlyun.com",
+        "sdkconf.avlyun.com",
+        "miav-cse.avlyun.com",
+        "update.avlyun.sec.miui.com",
+        "ixav-cse.avlyun.com",
+        "logupdate.avlyun.sec.miui.com",
+        "wetype.weixin.qq.com"
+      ]
+    }
+  ],
+  "version": 2
+}
