@@ -10,6 +10,9 @@ DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 
+# Cursor
+DOMAIN-SUFFIX,cursor.sh
+
 # Google Bard & Gemini
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,gemini.google.com
