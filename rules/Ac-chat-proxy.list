@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,oaiusercontent.com
 
 # Cursor
 DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursor.sh:443
 
 # Google Bard & Gemini
 DOMAIN-SUFFIX,bard.google.com
