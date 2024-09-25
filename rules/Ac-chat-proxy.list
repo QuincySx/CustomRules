@@ -3,6 +3,8 @@ DOMAIN-KEYWORD,chatgpt
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chat.openai.com
+DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,openaicom.imgix.net
 # Pay https://twitter.com/haoel/status/1625117664896229377?s=20
 DOMAIN-SUFFIX,stripe.com
 
