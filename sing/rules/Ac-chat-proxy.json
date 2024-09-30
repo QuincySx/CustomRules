@@ -2,12 +2,13 @@
   "rules": [
     {
       "domain_keyword": [
-        "chatgpt"
+        "chatgpt",
+        "openai",
+        "openaicom-api"
       ],
       "domain_suffix": [
         "openai.com",
         "chatgpt.com",
-        "chat.openai.com",
         "openai.com.cdn.cloudflare.net",
         "openaicom.imgix.net",
         "stripe.com",
@@ -17,6 +18,7 @@
         "cursor.sh:443",
         "bard.google.com",
         "gemini.google.com",
+        "auth0.com",
         "anthropic.com",
         "claude.ai",
         "bing.com",
