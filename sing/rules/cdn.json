@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "this_ruleset_is_made_by_sukkaw.ruleset.skk.moe",
+        "cdn-msp.jmcomic.me",
+        "cdn-msp.18comic.vip"
+      ],
+      "domain_suffix": [],
+      "domain_keyword": [
+        "-files.gitbook.io",
+        "vod-adaptive.akamaized.net",
+        "web-assets.zendesk",
+        "-res.cloudinary.com",
+        "dsn.algolia.net"
+      ],
+      "domain_regex": [
+        "^appcenter-filemanagement-[a-zA-Z0-9-_.]*?\\.cloudapp\\.net$",
+        "^proxy-[a-zA-Z0-9-_.]*?\\.dailymotion\\.com$",
+        "^static[a-zA-Z0-9-_.]*?\\.tgstat\\.ru$",
+        "^ocsp\\.[a-zA-Z0-9-_.]*?\\.amazontrust\\.com$",
+        "^s3\\.[a-zA-Z0-9-_.]*?\\.wasabisys\\.com$",
+        "^i[a-zA-Z0-9-_.]\\.nhentai\\.net$",
+        "^t[a-zA-Z0-9-_.]\\.nhentai\\.net$",
+        "^cdn[a-zA-Z0-9-_.]-thumbs\\.pornhost\\.com$",
+        "^cdn[a-zA-Z0-9-_.]-dl\\.pornhost\\.com$",
+        "^cdn-msp[a-zA-Z0-9-_.]\\.18comic\\.vip$",
+        "^cdn-msp[a-zA-Z0-9-_.]\\.jmcomic\\.me$",
+        "^static-[a-zA-Z0-9-_.][a-zA-Z0-9-_.]-cdn\\.eporner\\.com$",
+        "^file[a-zA-Z0-9-_.]\\.mikuclub\\.fun$",
+        "^cdn[a-zA-Z0-9-_.]\\.mikuclub\\.fun$",
+        "^cdns\\.[a-zA-Z0-9-_.]*?\\.gigya\\.com$",
+        "^video-thumbnail2\\.fc2\\.com$",
+        "^video[a-zA-Z0-9-_.]-thumbnail[a-zA-Z0-9-_.]\\.fc2\\.com$",
+        "^video-thumbnail2\\.liaoningmovie\\.net$",
+        "^video[a-zA-Z0-9-_.]-thumbnail[a-zA-Z0-9-_.]\\.liaoningmovie\\.net$",
+        "^vip-videoprem[a-zA-Z0-9-_.]*?-thumbnail[a-zA-Z0-9-_.]\\.fc2\\.com$",
+        "^blog-imgs-[a-zA-Z0-9-_.][a-zA-Z0-9-_.]\\.2nt\\.com$",
+        "^blog-imgs-[a-zA-Z0-9-_.][a-zA-Z0-9-_.]\\.fc2\\.com$",
+        "^rr[a-zA-Z0-9-_.]---[a-zA-Z0-9-_.][a-zA-Z0-9-_.]\\.ouo\\.si$",
+        "^ffzy-online[a-zA-Z0-9-_.]\\.com$",
+        "^ffzy-play[a-zA-Z0-9-_.]\\.com$",
+        "^kuaikan-cdn[a-zA-Z0-9-_.]\\.com$",
+        "^lz-cdn[a-zA-Z0-9-_.]\\.com$",
+        "^lz-cdn[a-zA-Z0-9-_.][a-zA-Z0-9-_.]\\.com$",
+        "^fsvod[a-zA-Z0-9-_.]\\.com$"
+      ],
+      "ip_cidr": [],
+      "source_ip_cidr": [],
+      "source_port": [],
+      "port": [],
+      "process_name": [],
+      "process_path": []
+    }
+  ]
+}
