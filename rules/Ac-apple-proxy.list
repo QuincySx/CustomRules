@@ -46,5 +46,9 @@ DOMAIN-SUFFIX,hls.itunes.apple.com
 DOMAIN-SUFFIX,ocsp.apple.com
 DOMAIN-SUFFIX,tv.apple.com
 
+
 // identity、init
 DOMAIN-SUFFIX,ess.apple.com
+
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
