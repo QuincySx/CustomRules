@@ -43,7 +43,9 @@
         "hls.itunes.apple.com",
         "ocsp.apple.com",
         "tv.apple.com",
-        "ess.apple.com"
+        "ess.apple.com",
+        "apple-relay.apple.com",
+        "guzzoni.apple.com"
       ]
     }
   ],
