@@ -597,7 +597,7 @@
         {
           "action": "include",
           "keywords": [
-            "日用|🇭🇰|HK|hk|香港|香|Hong Kong"
+            "日用|🇭🇰|HK|hk|香港|香|Hong Kong|🇸🇬|SG|sg|新加坡|狮|Singapore"
           ]
         },
         {
@@ -614,14 +614,16 @@
     "final": "🐟 漏网分流",
     "rules": [
       {
-        "protocol": [
-          "quic"
-        ],
-        "outbound": "block-out"
+        "inbound": "dns-in",
+        "outbound": "dns-out"
       },
       {
         "protocol": "dns",
         "outbound": "dns-out"
+      },
+      {
+        "protocol": "quic",
+        "outbound": "block-out"
       },
       {
         "rule_set": [
@@ -670,15 +672,7 @@
       },
       {
         "rule_set": [
-          "ac-exchange",
-          "geosite-category-cryptocurrency"
-        ],
-        "outbound": "🏦 交易所分流"
-      },
-      {
-        "rule_set": [
-          "ac-custom-proxy",
-          "geosite-github"
+          "ac-custom-proxy"
         ],
         "outbound": "🚀 手选节点"
       },
@@ -690,19 +684,6 @@
         "outbound": "🚀 CDN 节点"
       },
       {
-        "rule_set": "geosite-tiktok",
-        "outbound": "🎥 TikTok分流"
-      },
-      {
-        "rule_set": [
-          "geoip-netflix",
-          "geosite-netflix",
-          "geosite-disney",
-          "geosite-spotify"
-        ],
-        "outbound": "🎥 奈飞、Disney、Spotify 分流"
-      },
-      {
         "rule_set": [
           "apple-cn",
           "apple-cn-cdn"
@@ -711,20 +692,10 @@
       },
       {
         "rule_set": [
-          "geosite-apple-proxy"
-        ],
-        "outbound": "🍎 代理分流"
-      },
-      {
-        "rule_set": [
           "microsoft-cn-cdn",
           "geosite-microsoft-cn"
         ],
         "outbound": "Ⓜ️ 大陆服务分流"
-      },
-      {
-        "rule_set": "geosite-microsoft",
-        "outbound": "Ⓜ️ 服务分流"
       },
       {
         "rule_set": [
@@ -738,6 +709,42 @@
           "geosite-games-cn"
         ],
         "outbound": "🎮 直连分流"
+      },
+      {
+        "rule_set": [
+          "geoip-netflix",
+          "geosite-netflix",
+          "geosite-disney",
+          "geosite-spotify"
+        ],
+        "outbound": "🎥 奈飞、Disney、Spotify 分流"
+      },
+      {
+        "rule_set": [
+          "ac-exchange",
+          "geosite-category-cryptocurrency"
+        ],
+        "outbound": "🏦 交易所分流"
+      },
+      {
+        "rule_set": "geosite-tiktok",
+        "outbound": "🎥 TikTok分流"
+      },
+      {
+        "rule_set": [
+          "geosite-apple-proxy"
+        ],
+        "outbound": "🍎 代理分流"
+      },
+      {
+        "rule_set": [
+          "geosite-github"
+        ],
+        "outbound": "🚀 手选节点"
+      },
+      {
+        "rule_set": "geosite-microsoft",
+        "outbound": "Ⓜ️ 服务分流"
       },
       {
         "rule_set": [
