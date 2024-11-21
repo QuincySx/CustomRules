@@ -229,6 +229,9 @@ DOMAIN-SUFFIX,onekey.so
 DOMAIN-SUFFIX,onekeytest.com
 DOMAIN-SUFFIX,onekeycn.com
 
+# Pioneerex
+DOMAIN-SUFFIX,pioneerex.org
+
 # Analysis
 DOMAIN-SUFFIX,zapper.fi
 DOMAIN-SUFFIX,qkl123.com
