@@ -1,0 +1,10 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "download-cdn.jetbrains.com"
+      ]
+    }
+  ],
+  "version": 2
+}
