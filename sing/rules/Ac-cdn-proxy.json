@@ -3,6 +3,9 @@
     {
       "domain": [
         "download-cdn.jetbrains.com"
+      ],
+      "domain_suffix": [
+        "3ppp.top"
       ]
     }
   ],
