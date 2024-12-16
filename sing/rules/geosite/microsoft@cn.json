@@ -40,9 +40,9 @@
         "wscont1.apps.microsoft.com",
         "wscont2.apps.microsoft.com",
         "xb.dlservice.microsoft.com",
-        "www.microsoft.com",
         "bj1.api.bing.com",
-        "emoi-cncdn.bing.com"
+        "emoi-cncdn.bing.com",
+        "www.microsoft.com"
       ],
       "domain_suffix": [
         "dcg.microsoft.com",
@@ -80,9 +80,6 @@
         "sharepoint.cn",
         "dl.delivery.mp.microsoft.com",
         "download.windowsupdate.com",
-        "microsoftreactor.cn",
-        "microsoftreactor.com.cn",
-        "reactorms.com.cn",
         "microsoftnews.cn",
         "msn.cn",
         "xboxlive.cn",
@@ -146,7 +143,10 @@
         "cn.bing.com",
         "cn.bing.net",
         "cn.mm.bing.net",
-        "ditu.live.com"
+        "ditu.live.com",
+        "microsoftreactor.cn",
+        "microsoftreactor.com.cn",
+        "reactorms.com.cn"
       ],
       "domain_regex": [
         ".+\\.azchcdn[a-s]\\.com$",
