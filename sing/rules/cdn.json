@@ -14,7 +14,8 @@
         "vod-adaptive.akamaized.net",
         "web-assets.zendesk",
         "-res.cloudinary.com",
-        "dsn.algolia.net"
+        "dsn.algolia.net",
+        "cdnstatic."
       ],
       "domain_regex": [
         "^appcenter-filemanagement-[\\w.-]*?\\.cloudapp\\.net$",
@@ -33,6 +34,7 @@
         "^file[\\w.-]\\.mikuclub\\.fun$",
         "^cdn[\\w.-]\\.mikuclub\\.fun$",
         "^cdns\\.[\\w.-]*?\\.gigya\\.com$",
+        "^sdk\\.[\\w.-]*?\\.braze\\.eu$",
         "^video-thumbnail2\\.fc2\\.com$",
         "^video[\\w.-]-thumbnail[\\w.-]\\.fc2\\.com$",
         "^video-thumbnail2\\.liaoningmovie\\.net$",
