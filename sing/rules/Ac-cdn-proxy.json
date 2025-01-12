@@ -5,7 +5,9 @@
         "download-cdn.jetbrains.com"
       ],
       "domain_suffix": [
-        "3ppp.top"
+        "3ppp.top",
+        "archive.org",
+        "cloudflare-ech.com"
       ]
     }
   ],
