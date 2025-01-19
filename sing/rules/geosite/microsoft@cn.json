@@ -80,7 +80,6 @@
         "sharepoint.cn",
         "dl.delivery.mp.microsoft.com",
         "download.windowsupdate.com",
-        "xboxlive.cn",
         "21vbc.com",
         "21vbluecloud.com",
         "21vbluecloud.net",
@@ -146,7 +145,8 @@
         "microsoftreactor.com.cn",
         "reactorms.com.cn",
         "microsoftnews.cn",
-        "msn.cn"
+        "msn.cn",
+        "xboxlive.cn"
       ],
       "domain_regex": [
         ".+\\.azchcdn[a-s]\\.com$",
