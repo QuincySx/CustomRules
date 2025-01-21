@@ -1,13 +1,15 @@
-DOMAIN-KEYWORD, httpdns 
-DOMAIN-KEYWORD, httpsdns 
-DOMAIN-KEYWORD, http-dns 
-DOMAIN-KEYWORD, https-dns 
+DOMAIN-KEYWORD,httpdns 
+DOMAIN-KEYWORD,httpsdns 
+DOMAIN-KEYWORD,http-dns 
+DOMAIN-KEYWORD,https-dns 
 
 # baidu
 DOMAIN-SUFFIX,httpdns.baidu.com
 DOMAIN-SUFFIX,httpdns.baidubce.com
 DOMAIN-SUFFIX,httpsdns.baidu.com
 IP-CIDR,186.76.76.200/32,no-resolve
+DOMAIN-REGEX,^http://180.76.76.112/v4/resolve
+DOMAIN-REGEX,^http://180.76.76.220/v4/resolve
 
 # bilibili
 DOMAIN,httpdns.bilivideo.com
@@ -31,15 +33,40 @@ IP-CIDR,116.63.10.31/32,no-resolve
 IP-CIDR,112.64.218.119/32,no-resolve
 IP-CIDR,112.65.200.117/32,no-resolve
 
+# KEY_EXT_P2P_HTTPDNS_BILI_IP
+DOMAIN-REGEX,^http://47.101.175.206/resolve
+DOMAIN-REGEX,^http://47.100.123.169/resolve
+DOMAIN-REGEX,^http://120.46.169.234/resolve
+DOMAIN-REGEX,^http://121.36.72.124/resolve
+# KEY_EXT_P2P_BILIDNS_CMCC_IP
+DOMAIN-REGEX,^http://116.63.10.135/resolve
+DOMAIN-REGEX,^http://122.9.7.134/resolve
+DOMAIN-REGEX,^http://117.185.228.108/resolve
+DOMAIN-REGEX,^http://117.144.238.29/resolve
+# KEY_EXT_P2P_BILIDNS_CT_IP
+DOMAIN-REGEX,^http://122.9.13.79/resolve
+DOMAIN-REGEX,^http://122.9.15.129/resolve
+DOMAIN-REGEX,^http://101.91.140.224/resolve
+DOMAIN-REGEX,^http://101.91.140.124/resolve
+# KEY_EXT_P2P_BILIDNS_CU_IP
+DOMAIN-REGEX,^http://114.116.215.110/resolve
+DOMAIN-REGEX,^http://116.63.10.31/resolve
+DOMAIN-REGEX,^http://112.64.218.119/resolve
+DOMAIN-REGEX,^http://112.65.200.117/resolve
+
 # jd
 DOMAIN,dns.jd.com
 IP-CIDR,101.124.19.122/32,no-resolve
 IP-CIDR,2402:db40:5100:1011::5/128,no-resolve
+DOMAIN-REGEX,^https://dns.jd.com/v6/b
+
 # jd cloud
 IP-CIDR,103.224.222.208/32,no-resolve
 
 # weibo
 DOMAIN,dns.weibo.cn
+DOMAIN-REGEX,^http://api.weibo.cn/2/httpdns/config
+DOMAIN-REGEX,^http://api.weibo.cn/httpdns/config
 
 # weixin
 DOMAIN,dns.weixin.qq.com
@@ -51,11 +78,29 @@ IP-CIDR,42.187.184.154/32,no-resolve
 IP-CIDR,123.151.54.50/32,no-resolve
 IP-CIDR,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
 IP-CIDR,240e:928:1400:10::25/128,no-resolve
+DOMAIN-REGEX,^https?://dns.weixin.qq.com/cgi-bin/micromsg-bin/newgetdns
+DOMAIN-REGEX,^https?://dns.weixin.qq.com.cn/cgi-bin/micromsg-bin/newgetdns
+DOMAIN-REGEX,^https?://short.weixin.qq.com/cgi-bin/micromsg-bin/getcdndns
+DOMAIN-REGEX,^https?://hkextshort.weixin.qq.com/cgi-bin/micromsg-bin/getcdndns
 
 # ali
 DOMAIN,httpdns-api.aliyuncs.com
 DOMAIN,httpdns-sc.aliyuncs.com
 DOMAIN,httpdns.alicdn.com
+DOMAIN-REGEX,^https?://amdc.alipay.com/s?query
+DOMAIN-REGEX,^https?://amdc-sibling.alipay.com.cn/s?query
+DOMAIN-REGEX,^https?://110.76.8.150/squery
+DOMAIN-REGEX,^https?://203.209.230.39/squery
+DOMAIN-REGEX,^https?://203.209.245.102/squery
+DOMAIN-REGEX,^https?://203.209.245.158/squery
+DOMAIN-REGEX,^https?://203.209.247.95/squery
+DOMAIN-REGEX,^https?://203.209.250.41/squery
+DOMAIN-REGEX,^https?://203.209.250.114/squery
+DOMAIN-REGEX,^https?://203.209.251.147/squery
+DOMAIN-REGEX,^https?://2400:B180:6001::18F/squery
+DOMAIN-REGEX,^https?://2400:B200:1005:3000::155/squery
+DOMAIN-REGEX,^https?://2400:B200:1005:3000::1D3/squery
+DOMAIN-REGEX,^https?://2400:B200:5000:B000::C8/squery
 
 # Huawei
 DOMAIN,httpdns.c.cdnhwc2.com
@@ -64,6 +109,7 @@ DOMAIN,httpdns.c.cdnhwc2.com
 DOMAIN,httpdns.meituan.com
 IP-CIDR,202.90.110.46/32,no-resolve
 IP-CIDR,202.90.108.13/32,no-resolve
+DOMAIN-REGEX,^http://103.37.155.60/fetch
 
 # 网易
 DOMAIN,httpdns.music.163.com
@@ -77,6 +123,26 @@ DOMAIN,httpdns.push.oppomobile.com
 # zhihu
 IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,no-resolve
+DOMAIN-REGEX,^http://103.41.167.237/v2/resolv
+
+# pinduoduo
+DOMAIN-REGEX,^http://101.35.204.35/d
+DOMAIN-REGEX,^http://101.35.212.35/d
+DOMAIN-REGEX,^http://114.110.96.26/d
+DOMAIN-REGEX,^http://114.110.97.97/d
+DOMAIN-REGEX,^http://240c:409f::3:0:163/d
+DOMAIN-REGEX,^http://240c:409f::3:0:359/d
+DOMAIN-REGEX,^http://2402:4e00:1411:201:0:9964:ba21:5a41/d
+
+# QCloud
+DOMAIN-REGEX,^https?://119.29.29.29/d
+
+# QQmusic
+DOMAIN-REGEX,^http://182.256.116.116/d
+
+# Wework
+DOMAIN-REGEX,^http://182.254.116.117/d
+DOMAIN-REGEX,^http://182.254.118.119/d
 
 DOMAIN,httpdns.volcengineapi.com
 DOMAIN,httpdns.yunxindns.com
