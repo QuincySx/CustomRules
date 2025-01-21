@@ -16,6 +16,9 @@
         "xn--ngstr-cn-8za9o.com",
         "piclist.cn",
         "exitgames.com"
+      ],
+      "ip_cidr": [
+        "92.38.173.0/24"
       ]
     }
   ],
