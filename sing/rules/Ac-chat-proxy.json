@@ -14,6 +14,8 @@
         "stripe.com",
         "oaistatic.com",
         "oaiusercontent.com",
+        "apple-relay.cloudflare.com",
+        "apple-relay.apple.com",
         "cursor.sh",
         "cursor.sh:443",
         "bard.google.com",
