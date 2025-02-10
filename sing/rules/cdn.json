@@ -4,9 +4,9 @@
     {
       "domain": [
         "this_ruleset_is_made_by_sukkaw.ruleset.skk.moe",
-        "cdn-msp.jmcomic.me",
+        "cdn-msp.18comic.vip",
         "cdn-msp.jmcomic-zzz.one",
-        "cdn-msp.18comic.vip"
+        "cdn-msp.jmcomic.me"
       ],
       "domain_suffix": [
         "this_ruleset_is_made_by_sukkaw.ruleset.skk.moe"
@@ -26,6 +26,7 @@
         "^static[\\w.-]*?\\.tgstat\\.ru$",
         "^ocsp\\.[\\w.-]*?\\.amazontrust\\.com$",
         "^s3\\.[\\w.-]*?\\.wasabisys\\.com$",
+        "^object-storage-[\\w.-]*?\\.vexxhost\\.net$",
         "^i[\\w.-]\\.nhentai\\.net$",
         "^t[\\w.-]\\.nhentai\\.net$",
         "^cdn[\\w.-]-thumbs\\.pornhost\\.com$",
@@ -42,6 +43,7 @@
         "^img[\\w.-][\\w.-]\\.porngo\\.com$",
         "^th-[\\w.-]*?\\.pornone\\.com$",
         "^s[\\w.-][\\w.-][\\w.-]\\.pornone\\.com$",
+        "^browser-intake-[\\w.-]*?-datadoghq\\.com$",
         "^video-thumbnail2\\.fc2\\.com$",
         "^video[\\w.-]-thumbnail[\\w.-]\\.fc2\\.com$",
         "^video-thumbnail2\\.liaoningmovie\\.net$",
@@ -50,11 +52,7 @@
         "^blog-imgs-[\\w.-][\\w.-]\\.2nt\\.com$",
         "^blog-imgs-[\\w.-][\\w.-]\\.fc2\\.com$",
         "^rr[\\w.-]---[\\w.-][\\w.-]\\.ouo\\.si$",
-        "^[\\w.-]*?\\.ffzy-online[\\w.-]\\.com$",
-        "^[\\w.-]*?\\.ffzy-play[\\w.-]\\.com$",
         "^[\\w.-]*?\\.kuaikan-cdn[\\w.-]\\.com$",
-        "^[\\w.-]*?\\.lz-cdn[\\w.-]\\.com$",
-        "^[\\w.-]*?\\.lz-cdn[\\w.-][\\w.-]\\.com$",
         "^[\\w.-]*?\\.fsvod[\\w.-]\\.com$",
         "^image[\\w.-]*?\\.cloudokyo\\.cloud$",
         "^video[\\w.-]*?\\.cloudokyo\\.cloud$",
