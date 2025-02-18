@@ -19,3 +19,6 @@ DOMAIN-SUFFIX,logupdate.avlyun.sec.miui.com
 
 # weixin keyboard
 DOMAIN-SUFFIX,wetype.weixin.qq.com
+
+# tencent urlsec
+DOMAIN-SUFFIX,urlsec.qq.com
