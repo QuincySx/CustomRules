@@ -40,9 +40,9 @@
         "wscont1.apps.microsoft.com",
         "wscont2.apps.microsoft.com",
         "xb.dlservice.microsoft.com",
-        "www.microsoft.com",
         "bj1.api.bing.com",
-        "emoi-cncdn.bing.com"
+        "emoi-cncdn.bing.com",
+        "www.microsoft.com"
       ],
       "domain_suffix": [
         "dcg.microsoft.com",
@@ -58,6 +58,7 @@
         "microsoftonline-p.cn",
         "microsoftonline-p.net.cn",
         "microsoftonline.cn",
+        "microsoftstore.com.cn",
         "microsofttranslator-int.cn",
         "msauth.cn",
         "msauthimages.cn",
@@ -69,6 +70,7 @@
         "o365files.cn",
         "office365-net.cn",
         "office365.cn",
+        "officeplus.cn",
         "officewebapps.cn",
         "onmschina.cn",
         "outlook.cn",
@@ -80,8 +82,6 @@
         "sharepoint.cn",
         "dl.delivery.mp.microsoft.com",
         "download.windowsupdate.com",
-        "microsoftnews.cn",
-        "msn.cn",
         "xboxlive.cn",
         "21vbc.com",
         "21vbluecloud.com",
@@ -146,7 +146,9 @@
         "ditu.live.com",
         "microsoftreactor.cn",
         "microsoftreactor.com.cn",
-        "reactorms.com.cn"
+        "reactorms.com.cn",
+        "microsoftnews.cn",
+        "msn.cn"
       ],
       "domain_regex": [
         ".+\\.azchcdn[a-s]\\.com$",
