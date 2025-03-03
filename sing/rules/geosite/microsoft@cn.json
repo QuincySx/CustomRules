@@ -40,9 +40,9 @@
         "wscont1.apps.microsoft.com",
         "wscont2.apps.microsoft.com",
         "xb.dlservice.microsoft.com",
+        "www.microsoft.com",
         "bj1.api.bing.com",
-        "emoi-cncdn.bing.com",
-        "www.microsoft.com"
+        "emoi-cncdn.bing.com"
       ],
       "domain_suffix": [
         "dcg.microsoft.com",
@@ -82,6 +82,8 @@
         "sharepoint.cn",
         "dl.delivery.mp.microsoft.com",
         "download.windowsupdate.com",
+        "microsoftnews.cn",
+        "msn.cn",
         "xboxlive.cn",
         "21vbc.com",
         "21vbluecloud.com",
@@ -138,7 +140,36 @@
         "unity3dcloud.cn",
         "windowsazure.cn",
         "windowsazurestatus.cn",
+        "azchcdna.com",
+        "azchcdnb.com",
+        "azchcdnc.com",
+        "azchcdnd.com",
+        "azchcdne.com",
+        "azchcdnf.com",
+        "azchcdng.com",
+        "azchcdnh.com",
+        "azchcdni.com",
+        "azchcdnj.com",
+        "azchcdnk.com",
+        "azchcdnl.com",
+        "azchcdnm.com",
+        "azchcdnn.com",
+        "azchcdno.com",
+        "azchcdnp.com",
+        "azchcdnq.com",
+        "azchcdnr.com",
+        "azchcdns.com",
         "azure-dns.cn",
+        "azure-dns-1.cn",
+        "azure-dns-2.cn",
+        "azure-dns-3.cn",
+        "azure-dns-4.cn",
+        "azure-dns-5.cn",
+        "azure-dns-6.cn",
+        "azure-dns-7.cn",
+        "azure-dns-8.cn",
+        "azure-dns-9.cn",
+        "azure-dns-10.cn",
         "bing.com.cn",
         "cn.bing.com",
         "cn.bing.net",
@@ -146,13 +177,7 @@
         "ditu.live.com",
         "microsoftreactor.cn",
         "microsoftreactor.com.cn",
-        "reactorms.com.cn",
-        "microsoftnews.cn",
-        "msn.cn"
-      ],
-      "domain_regex": [
-        ".+\\.azchcdn[a-s]\\.com$",
-        ".+\\.azure-dns-([1-9]|10)\\.cn$"
+        "reactorms.com.cn"
       ]
     }
   ]

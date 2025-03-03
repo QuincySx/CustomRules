@@ -27,7 +27,8 @@
       "domain_regex": [
         "^appcenter-filemanagement-[\\w.-]*?\\.cloudapp\\.net$",
         "^proxy-[\\w.-]*?\\.dailymotion\\.com$",
-        "^static[\\w.-]*?\\.tgstat\\.ru$",
+        "^static[\\w.-]\\.tgstat\\.ru$",
+        "^static[\\w.-][\\w.-]\\.tgstat\\.ru$",
         "^ocsp\\.[\\w.-]*?\\.amazontrust\\.com$",
         "^s3\\.[\\w.-]*?\\.wasabisys\\.com$",
         "^object-storage-[\\w.-]*?\\.vexxhost\\.net$",
@@ -56,6 +57,7 @@
         "^blog-imgs-[\\w.-][\\w.-]\\.2nt\\.com$",
         "^blog-imgs-[\\w.-][\\w.-]\\.fc2\\.com$",
         "^rr[\\w.-]---[\\w.-][\\w.-]\\.ouo\\.si$",
+        "^s3-[\\w.-]*?\\.figma\\.com$",
         "^[\\w.-]*?\\.kuaikan-cdn[\\w.-]\\.com$",
         "^[\\w.-]*?\\.fsvod[\\w.-]\\.com$",
         "^image[\\w.-]*?\\.cloudokyo\\.cloud$",
