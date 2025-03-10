@@ -82,6 +82,9 @@
         "sharepoint.cn",
         "dl.delivery.mp.microsoft.com",
         "download.windowsupdate.com",
+        "microsoftreactor.cn",
+        "microsoftreactor.com.cn",
+        "reactorms.com.cn",
         "microsoftnews.cn",
         "msn.cn",
         "xboxlive.cn",
@@ -174,10 +177,7 @@
         "cn.bing.com",
         "cn.bing.net",
         "cn.mm.bing.net",
-        "ditu.live.com",
-        "microsoftreactor.cn",
-        "microsoftreactor.com.cn",
-        "reactorms.com.cn"
+        "ditu.live.com"
       ]
     }
   ]
