@@ -786,6 +786,8 @@ fake-ip-filter:
   - "+.zhipin.com"
   - "+.zhongsou.com"
   - "+.zhuihd.com"
+  - "+.cmbchina.com"
+  - "+.95516.com"
   - github.com
   - "*.github.com"
   - "*.github.dev"
