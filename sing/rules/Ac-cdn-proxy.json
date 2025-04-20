@@ -7,7 +7,11 @@
       "domain_suffix": [
         "3ppp.top",
         "archive.org",
-        "cloudflare-ech.com"
+        "cloudflare-ech.com",
+        "larksuitecdn.com"
+      ],
+      "domain_keyword": [
+        "-cdn.coze.com"
       ]
     }
   ],
