@@ -4,3 +4,7 @@ DOMAIN,download-cdn.jetbrains.com
 DOMAIN-SUFFIX,3ppp.top
 DOMAIN-SUFFIX,archive.org
 DOMAIN-SUFFIX,cloudflare-ech.com
+
+# Lark 飞书
+DOMAIN-SUFFIX,larksuitecdn.com
+DOMAIN-KEYWORD,-cdn.coze.com
