@@ -68,9 +68,18 @@ DOMAIN,dns.weibo.cn
 DOMAIN-REGEX,^http://api.weibo.cn/2/httpdns/config
 DOMAIN-REGEX,^http://api.weibo.cn/httpdns/config
 
+# yy
+DOMAIN,yyapp-httpdns.gslb.yy.com
+DOMAIN,union-httpdns.gslb.yy.com
+DOMAIN,httpdns-v6.gslb.yy.com
+
+# qq
+DOMAIN,httpdns.kg.qq.com
+
 # weixin
 DOMAIN,dns.weixin.qq.com
 DOMAIN,dns.weixin.qq.com.cn
+DOMAIN,aedns.weixin.qq.com
 IP-CIDR,39.97.128.148/32,no-resolve
 IP-CIDR,42.187.182.106/32,no-resolve
 IP-CIDR,42.187.182.123/32,no-resolve
@@ -114,11 +123,13 @@ DOMAIN-REGEX,^http://103.37.155.60/fetch
 # 网易
 DOMAIN,httpdns.music.163.com
 DOMAIN,httpdns.n.netease.com
+DOMAIN,httpdns-sdk.n.netease.com
 DOMAIN,lofter.httpdns.c.163.com
 DOMAIN,music.httpdns.c.163.com
 
 # oppo
 DOMAIN,httpdns.push.oppomobile.com
+DOMAIN,httpdns.ocloud.oppomobile.com
 
 # zhihu
 IP-CIDR,118.89.204.198/32,no-resolve
@@ -144,9 +155,13 @@ DOMAIN-REGEX,^http://182.256.116.116/d
 DOMAIN-REGEX,^http://182.254.116.117/d
 DOMAIN-REGEX,^http://182.254.118.119/d
 
+
 DOMAIN,httpdns.volcengineapi.com
 DOMAIN,httpdns.yunxindns.com
 DOMAIN,kuaishou.httpdns.pro
+DOMAIN,httpdns.kwd.inkuai.com
+DOMAIN,apidns.kwd.inkuai.com
+DOMAIN,apidns-js.kwd.inkuai.com
 IP-CIDR,115.236.121.195/32,no-resolve
 IP-CIDR,115.236.121.51/32,no-resolve
 IP-CIDR,119.29.29.98/31,no-resolve
