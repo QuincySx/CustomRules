@@ -53,6 +53,9 @@ DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,byteintlapi.com
 
+# Lark 飞书
+DOMAIN-SUFFIX,larksuite.com
+
 # Maxon C4D
 DOMAIN-SUFFIX,maxon.net
 DOMAIN-SUFFIX,maxon.com
