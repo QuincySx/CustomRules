@@ -25,3 +25,6 @@ DOMAIN-SUFFIX,piclist.cn
 # VRChat
 DOMAIN-SUFFIX,exitgames.com
 IP-CIDR,92.38.173.0/24,no-resolve
+
+# Futu
+DOMAIN-SUFFIX,futunn.com
