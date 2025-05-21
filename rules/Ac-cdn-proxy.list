@@ -8,3 +8,6 @@ DOMAIN-SUFFIX,cloudflare-ech.com
 # Lark 飞书
 DOMAIN-SUFFIX,larksuitecdn.com
 DOMAIN-KEYWORD,-cdn.coze.com
+
+# Maven
+DOMAIN-SUFFIX,repo.maven.apache.org
