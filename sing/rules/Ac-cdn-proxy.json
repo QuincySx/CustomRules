@@ -8,7 +8,8 @@
         "3ppp.top",
         "archive.org",
         "cloudflare-ech.com",
-        "larksuitecdn.com"
+        "larksuitecdn.com",
+        "repo.maven.apache.org"
       ],
       "domain_keyword": [
         "-cdn.coze.com"
