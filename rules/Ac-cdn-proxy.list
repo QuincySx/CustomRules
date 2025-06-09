@@ -11,3 +11,6 @@ DOMAIN-KEYWORD,-cdn.coze.com
 
 # Maven
 DOMAIN-SUFFIX,repo.maven.apache.org
+
+# Microsoft CDN
+DOMAIN-SUFFIX,blob.core.windows.net
