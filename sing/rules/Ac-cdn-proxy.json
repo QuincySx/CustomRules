@@ -9,7 +9,8 @@
         "archive.org",
         "cloudflare-ech.com",
         "larksuitecdn.com",
-        "repo.maven.apache.org"
+        "repo.maven.apache.org",
+        "blob.core.windows.net"
       ],
       "domain_keyword": [
         "-cdn.coze.com"
