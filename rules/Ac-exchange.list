@@ -229,6 +229,9 @@ DOMAIN-SUFFIX,onekey.so
 DOMAIN-SUFFIX,onekeytest.com
 DOMAIN-SUFFIX,onekeycn.com
 
+# CoinGlass
+DOMAIN-SUFFIX,coinglass.com
+
 # Pioneerex
 DOMAIN-SUFFIX,pioneerex.org
 
