@@ -1,3 +1,4 @@
+import os
 from utils import (
     fetch_url_content, read_lines_from_file, ensure_directory, filter_lines
 )
