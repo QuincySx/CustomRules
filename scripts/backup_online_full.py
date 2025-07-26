@@ -1,14 +1,16 @@
-import os
 import re
-import requests
+from utils import (
+    read_lines_from_file, ensure_directory, fetch_url_content,
+    get_filename_from_url, write_lines_to_file
+)
 
 def main():
-    with open("Online_Full.ini", "r") as file:
-        content = file.readlines()
+    content = read_lines_from_file("Online_Full.ini")
+    if not content:
+        return
 
     ruleset_pattern = re.compile(r"ruleset=.*?,(https://.*?\.list)")
-
-    os.makedirs("metadata", exist_ok=True)
+    ensure_directory("metadata")
 
     new_content = []
 
@@ -16,17 +18,14 @@ def main():
         if not line.startswith(";"):
             urls = ruleset_pattern.findall(line)
             for url in urls:
-                response = requests.get(url)
-                if response.status_code == 200:
-                    filename = url.split("/")[-1]
+                response = fetch_url_content(url)
+                if response:
+                    filename = get_filename_from_url(url)
                     new_url = f"https://raw.githubusercontent.com/QuincySx/CustomRules/metadata/rules/{filename}"
                     line = line.replace(url, new_url)
-                else:
-                    print(f"Error downloading {url}: {response.status_code}")
         new_content.append(line)
 
-    with open(os.path.join("metadata", "Online_Full_Back.ini"), "w") as file:
-        file.writelines(new_content)
+    write_lines_to_file(new_content, "metadata/Online_Full_Back.ini")
 
 
 if __name__ == "__main__":

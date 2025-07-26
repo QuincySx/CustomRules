@@ -8,7 +8,7 @@
       "external_controller": "0.0.0.0:9090",
       "external_ui": "ui",
       "secret": "123456",
-      "external_ui_download_url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip",
+      "external_ui_download_url": "https://edgeone.gh-proxy.com/github.com/MetaCubeX/metacubexd/archive/gh-pages.zip",
       "external_ui_download_detour": "direct-out",
       "default_mode": "rule"
     },
@@ -93,6 +93,10 @@
       "tag": "direct-out"
     },
     {
+      "type": "block",
+      "tag": "block-out"
+    },
+    {
       "tag": "🚀 手选节点",
       "type": "selector",
       "outbounds": [
@@ -102,6 +106,7 @@
         "🇸🇬 狮城节点",
         "🇯🇵 日本节点",
         "🇺🇲 美国节点",
+        "🏴‍☠️ 自建节点",
         "🇺🇳 其他节点",
         "🎮 游戏节点",
         "🎥 奈飞节点",
@@ -123,6 +128,7 @@
         "🚀 手选节点",
         "🇭🇰 香港自动节点",
         "🇭🇰 香港节点",
+        "🏴‍☠️ 自建节点",
         "🇨🇳 台湾节点",
         "🇸🇬 狮城节点",
         "🇯🇵 日本节点",
@@ -133,13 +139,14 @@
       "default": "🇯🇵 日本节点"
     },
     {
-      "tag": "🚀 CDN 节点",
+      "tag": "🚀 CDN 分流",
       "type": "selector",
       "outbounds": [
         "🇺🇳 低倍节点",
         "🚀 手选节点",
         "🇭🇰 香港自动节点",
         "🇭🇰 香港节点",
+        "🏴‍☠️ 自建节点",
         "🇨🇳 台湾节点",
         "🇸🇬 狮城节点",
         "🇯🇵 日本节点",
@@ -312,6 +319,18 @@
       "default": "🇨🇳 台湾节点"
     },
     {
+      "tag": "🍃 应用净化分流",
+      "type": "selector",
+      "outbounds": ["block-out", "direct-out", "🚀 手选节点"],
+      "default": "block-out"
+    },
+    {
+      "tag": "🛑 广告分流",
+      "type": "selector",
+      "outbounds": ["block-out", "direct-out", "🚀 手选节点"],
+      "default": "block-out"
+    },
+    {
       "tag": "🐟 漏网分流",
       "type": "selector",
       "outbounds": [
@@ -378,6 +397,24 @@
       ]
     },
     {
+      "tag": "🇺🇲 美国节点",
+      "type": "selector",
+      "outbounds": ["{all}", "direct-out"],
+      "filter": [
+        { "action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States|la|LA|sj|SJ"] },
+        { "action": "exclude", "keywords": ["遊戲|游戏|game|Game|GAME"] }
+      ]
+    },
+    {
+      "tag": "🏴‍☠️ 自建节点",
+      "type": "selector",
+      "outbounds": ["{all}", "direct-out"],
+      "filter": [
+        { "action": "include", "keywords": ["self"] },
+        { "action": "exclude", "keywords": ["遊戲|游戏|game|Game|GAME"] }
+      ]
+    },
+    {
       "tag": "🇨🇳 台湾节点",
       "type": "selector",
       "outbounds": ["{all}", "direct-out"],
@@ -392,15 +429,6 @@
       "outbounds": ["{all}", "direct-out"],
       "filter": [
         { "action": "include", "keywords": ["🇸🇬|SG|sg|新加坡|狮|Singapore"] },
-        { "action": "exclude", "keywords": ["遊戲|游戏|game|Game|GAME"] }
-      ]
-    },
-    {
-      "tag": "🇺🇲 美国节点",
-      "type": "selector",
-      "outbounds": ["{all}", "direct-out"],
-      "filter": [
-        { "action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"] },
         { "action": "exclude", "keywords": ["遊戲|游戏|game|Game|GAME"] }
       ]
     },
@@ -447,12 +475,24 @@
     {
       "tag": "🇺🇳 低倍节点",
       "type": "selector",
-      "outbounds": ["{all}", "direct-out"],
+      "outbounds": [
+        "🚀 手选节点",
+        "🇭🇰 香港自动节点",
+        "🇭🇰 香港节点",
+        "🇨🇳 台湾节点",
+        "🇸🇬 狮城节点",
+        "🏴‍☠️ 自建节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🇺🇳 其他节点",
+        "{all}",
+        "direct-out"
+      ],
       "filter": [
         {
           "action": "include",
           "keywords": [
-            "日用|🇭🇰|HK|hk|香港|香|Hong Kong|🇸🇬|SG|sg|新加坡|狮|Singapore"
+            "日用|实验|🇭🇰|HK|hk|香港|香|Hong Kong|🇸🇬|SG|sg|新加坡|狮|Singapore|self"
           ]
         },
         {
@@ -505,11 +545,11 @@
       },
       {
         "rule_set": ["ac-privacy-ban", "ac-scam-ban", "ac-httpdns-ban"],
-        "action": "reject"
+        "outbound": "🍃 应用净化分流"
       },
       {
         "rule_set": "geosite-category-ads-all",
-        "action": "reject"
+        "outbound": "🛑 广告分流"
       },
       {
         "clash_mode": "direct",
@@ -541,7 +581,7 @@
       },
       {
         "rule_set": ["proxy-ip-cdn", "proxy-domain-cdn", "ac-cdn-proxy"],
-        "outbound": "🚀 CDN 节点"
+        "outbound": "🚀 CDN 分流"
       },
       {
         "rule_set": ["apple-cn", "apple-cn-cdn"],
