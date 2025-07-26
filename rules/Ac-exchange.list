@@ -169,6 +169,7 @@ DOMAIN-SUFFIX,bybit.biz
 DOMAIN-SUFFIX,bybdc6.com
 DOMAIN-SUFFIX,bybit-global.com
 DOMAIN-SUFFIX,bybit.cloud
+DOMAIN-SUFFIX,monitor-frontend-collector.a.bybit-aws.com
 
 # Metamask
 DOMAIN-KEYWORD,metamask
