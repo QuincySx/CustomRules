@@ -1,4 +1,7 @@
 import re
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from utils import (
     read_lines_from_file, ensure_directory, fetch_url_content,
     get_filename_from_url, write_lines_to_file
