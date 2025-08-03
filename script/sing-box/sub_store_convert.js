@@ -12,18 +12,15 @@ let { type } = $arguments
 type = /^1$|col|组合/i.test(type) ? 'collection' : 'subscription'
 
 const parser = ProxyUtils.JSON5 || JSON
-log(`① 使用 ${ProxyUtils.JSON5 ? 'JSON5' : 'JSON'} 解析配置文件`)
 let config
 try {
   config = parser.parse($content ?? $files[0])
 } catch (e) {
-  log(`${e.message ?? e}`)
   throw new Error(`配置文件不是合法的 ${ProxyUtils.JSON5 ? 'JSON5' : 'JSON'} 格式`)
 }
 
 let proxies
 if (url) {
-  log(`直接从 URL ${url} 读取订阅`)
   proxies = await produceArtifact({
     name,
     type,
@@ -39,7 +36,6 @@ if (url) {
     },
   })
 } else {
-  log(`将读取名称为 ${name} 的 ${type === 'collection' ? '组合' : ''}订阅`)
   proxies = await produceArtifact({
     name,
     type,
