@@ -1,13 +1,13 @@
 # ChatGPT
-DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,openaicom-api
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 # Pay https://twitter.com/haoel/status/1625117664896229377?s=20
 DOMAIN-SUFFIX,stripe.com
+DOMAIN-KEYWORD,chatgpt
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,openaicom-api
 
 # Openai CDN
 DOMAIN-SUFFIX,oaistatic.com
@@ -16,6 +16,7 @@ DOMAIN-SUFFIX,oaiusercontent.com
 # Apple
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
 DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-KEYWORD,apple-relay
 
 # Cursor
 DOMAIN-SUFFIX,cursor.sh
