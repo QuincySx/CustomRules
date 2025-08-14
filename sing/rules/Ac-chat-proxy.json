@@ -1,11 +1,6 @@
 {
   "rules": [
     {
-      "domain_keyword": [
-        "chatgpt",
-        "openai",
-        "openaicom-api"
-      ],
       "domain_suffix": [
         "openai.com",
         "chatgpt.com",
@@ -39,6 +34,12 @@
         "larksuite.com",
         "maxon.net",
         "maxon.com"
+      ],
+      "domain_keyword": [
+        "chatgpt",
+        "openai",
+        "openaicom-api",
+        "apple-relay"
       ],
       "domain": [
         "ai.google.dev",
