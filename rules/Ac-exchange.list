@@ -242,10 +242,10 @@ DOMAIN-SUFFIX,zks.app
 DOMAIN-SUFFIX,zks.org
 
 # Onekey
-DOMAIN-SUFFIX,onekey-asset.com
-DOMAIN-SUFFIX,onekey.so
-DOMAIN-SUFFIX,onekeytest.com
-DOMAIN-SUFFIX,onekeycn.com
+# DOMAIN-SUFFIX,onekey-asset.com
+# DOMAIN-SUFFIX,onekey.so
+# DOMAIN-SUFFIX,onekeytest.com
+# DOMAIN-SUFFIX,onekeycn.com
 
 # CoinGlass
 DOMAIN-SUFFIX,coinglass.com
