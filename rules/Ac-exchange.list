@@ -44,74 +44,6 @@ DOMAIN-SUFFIX,gate.io
 # Mexc
 DOMAIN-SUFFIX,mexc.com
 
-# Binance
-DOMAIN-SUFFIX,binance.cc
-DOMAIN-SUFFIX,binance.cloud
-DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,binance.im
-DOMAIN-SUFFIX,binance.me
-DOMAIN-SUFFIX,binance.us
-DOMAIN-SUFFIX,bnappzh.co
-DOMAIN-SUFFIX,bnappzh.com
-DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,binance.charity
-DOMAIN-SUFFIX,binance.co
-DOMAIN-SUFFIX,binance.info
-DOMAIN-SUFFIX,binance.net
-DOMAIN-SUFFIX,binance.org
-DOMAIN-SUFFIX,binance.vision
-DOMAIN-SUFFIX,binanceapi.com
-DOMAIN-SUFFIX,binancezh.be
-DOMAIN-SUFFIX,binancezh.biz
-DOMAIN-SUFFIX,binancezh.cc
-DOMAIN-SUFFIX,binancezh.co
-DOMAIN-SUFFIX,binancezh.com
-DOMAIN-SUFFIX,binancezh.info
-DOMAIN-SUFFIX,binancezh.ink
-DOMAIN-SUFFIX,binancezh.kim
-DOMAIN-SUFFIX,binancezh.link
-DOMAIN-SUFFIX,binancezh.live
-DOMAIN-SUFFIX,binancezh.mobi
-DOMAIN-SUFFIX,binancezh.net
-DOMAIN-SUFFIX,binancezh.pro
-DOMAIN-SUFFIX,binancezh.sh
-DOMAIN-SUFFIX,binancezh.top
-DOMAIN-SUFFIX,bnappzh.mobi
-DOMAIN-SUFFIX,bsc.getblock.io
-DOMAIN-SUFFIX,bscscan.com
-DOMAIN-KEYWORD,binance
-
-# Huobi
-DOMAIN-SUFFIX,hbabit.com
-DOMAIN-SUFFIX,hbfile.net
-DOMAIN-SUFFIX,huobi.com
-DOMAIN-SUFFIX,huobi.me
-DOMAIN-SUFFIX,huobi.pro
-DOMAIN-SUFFIX,huobi.sc
-DOMAIN-SUFFIX,huobiasia.vip
-DOMAIN-SUFFIX,huobigroup.com
-DOMAIN-SUFFIX,huobitoken.com
-DOMAIN-SUFFIX,heco-scan.com
-DOMAIN-SUFFIX,hecoview.com
-DOMAIN-SUFFIX,hbfile.net
-DOMAIN-SUFFIX,huobi.br.com
-DOMAIN-SUFFIX,bitderiv.com
-DOMAIN-SUFFIX,hecochain.com
-DOMAIN-SUFFIX,huobi.ws
-DOMAIN-SUFFIX,huobi.ug
-DOMAIN-SUFFIX,huobi.co.ma
-DOMAIN-SUFFIX,huobi.br.com
-DOMAIN-KEYWORD,huobi
-
-# OKX
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,okx.me
-DOMAIN-KEYWORD,okx
-
-DOMAIN-SUFFIX,onekey.so
-
 # SafePal
 DOMAIN-SUFFIX,isafepal.com
 DOMAIN-KEYWORD,isafepal
@@ -155,24 +87,6 @@ DOMAIN-SUFFIX,1ml.com
 DOMAIN-SUFFIX,bisq.io
 DOMAIN-SUFFIX,bisq.network
 DOMAIN-SUFFIX,bitsquare.io
-
-# bybit
-DOMAIN,bybit-exchange.github.io
-DOMAIN,bybit.ada.support
-DOMAIN-SUFFIX,bybit.com
-DOMAIN-SUFFIX,bycsi.com
-DOMAIN-SUFFIX,bytick.com
-DOMAIN-SUFFIX,byapis.com
-DOMAIN-SUFFIX,bycbe.com
-DOMAIN-SUFFIX,bymj.io
-DOMAIN-SUFFIX,byabcde.com
-DOMAIN-SUFFIX,byapps.net
-DOMAIN-SUFFIX,byd3c3.com
-DOMAIN-SUFFIX,bybit.biz
-DOMAIN-SUFFIX,bybdc6.com
-DOMAIN-SUFFIX,bybit-global.com
-DOMAIN-SUFFIX,bybit.cloud
-DOMAIN-SUFFIX,monitor-frontend-collector.a.bybit-aws.com
 
 # Metamask
 DOMAIN-KEYWORD,metamask
@@ -246,7 +160,7 @@ DOMAIN-SUFFIX,zks.org
 
 # Onekey
 # DOMAIN-SUFFIX,onekey-asset.com
-# DOMAIN-SUFFIX,onekey.so
+DOMAIN-SUFFIX,onekey.so
 # DOMAIN-SUFFIX,onekeytest.com
 # DOMAIN-SUFFIX,onekeycn.com
 
