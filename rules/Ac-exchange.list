@@ -9,8 +9,6 @@ DOMAIN-SUFFIX,bithumb.com
 DOMAIN-SUFFIX,bitmex.com
 DOMAIN-SUFFIX,bitstamp.net
 DOMAIN-SUFFIX,bittrex.com
-DOMAIN-SUFFIX,bybit.com
-DOMAIN-KEYWORD,bybit
 DOMAIN-SUFFIX,coinbase.com
 DOMAIN-SUFFIX,coincheck.com
 DOMAIN-SUFFIX,coinone.co.kr
@@ -35,6 +33,9 @@ DOMAIN-SUFFIX,optimism.io
 DOMAIN-SUFFIX,arbitrum.io
 DOMAIN-SUFFIX,poly.network
 DOMAIN-SUFFIX,boba.network
+
+# Ethena
+DOMAIN-SUFFIX,ethena.fi
 
 # Gate
 DOMAIN-SUFFIX,gate.ac
