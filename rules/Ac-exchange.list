@@ -4,29 +4,12 @@ DOMAIN-SUFFIX,bitcointalk.org
 # Exchange
 DOMAIN-SUFFIX,aex.com
 DOMAIN-SUFFIX,bibox.com
-DOMAIN-SUFFIX,bitfinex.com
 DOMAIN-SUFFIX,bithumb.com
-DOMAIN-SUFFIX,bitmex.com
-DOMAIN-SUFFIX,bitstamp.net
-DOMAIN-SUFFIX,bittrex.com
-DOMAIN-SUFFIX,coinbase.com
 DOMAIN-SUFFIX,coincheck.com
-DOMAIN-SUFFIX,coinone.co.kr
-DOMAIN-SUFFIX,gemini.com
 DOMAIN-SUFFIX,korbit.co.kr
-DOMAIN-SUFFIX,kraken.com
-DOMAIN-SUFFIX,kucoin.com
 DOMAIN-SUFFIX,liquid.com
 DOMAIN-SUFFIX,poloniex.com
-DOMAIN-SUFFIX,bitbank.cc
-DOMAIN-SUFFIX,bitcoin.org
-DOMAIN-SUFFIX,bitquick.co
-DOMAIN-SUFFIX,btcbox.co.jp
-DOMAIN-SUFFIX,cex.io
-DOMAIN-SUFFIX,dogecoin.com
-DOMAIN-SUFFIX,paxful.com
 DOMAIN-SUFFIX,tether.to
-DOMAIN-SUFFIX,dydx.exchange
 DOMAIN-SUFFIX,solana.com
 DOMAIN-SUFFIX,avax.network
 DOMAIN-SUFFIX,optimism.io
@@ -39,10 +22,6 @@ DOMAIN-SUFFIX,ethena.fi
 
 # Gate
 DOMAIN-SUFFIX,gate.ac
-DOMAIN-SUFFIX,gate.io
-
-# Mexc
-DOMAIN-SUFFIX,mexc.com
 
 # SafePal
 DOMAIN-SUFFIX,isafepal.com
@@ -58,16 +37,11 @@ DOMAIN-SUFFIX,tokenlon.im
 DOMAIN-SUFFIX,ckb.pw
 
 # ethereum
-DOMAIN-SUFFIX,devcon.org
-DOMAIN-SUFFIX,ethereum.foundation
-DOMAIN-SUFFIX,ethereum.org
-DOMAIN-SUFFIX,etherscan.io
 DOMAIN-SUFFIX,nansen.ai
 DOMAIN-SUFFIX,ethgasstation.info
 DOMAIN-SUFFIX,watchtheburn.com
 DOMAIN-SUFFIX,flashbots.net
 DOMAIN-SUFFIX,cryptofees.info
-DOMAIN-SUFFIX,etherscan.io
 DOMAIN-SUFFIX,ethereum-magicians.org
 DOMAIN-SUFFIX,vitalik.ca
 DOMAIN-SUFFIX,ethfans.org
@@ -84,8 +58,6 @@ DOMAIN-SUFFIX,acinq.co
 DOMAIN-SUFFIX,1ml.com
 
 # bitsquare
-DOMAIN-SUFFIX,bisq.io
-DOMAIN-SUFFIX,bisq.network
 DOMAIN-SUFFIX,bitsquare.io
 
 # Metamask
@@ -94,7 +66,6 @@ DOMAIN,token-api.metaswap.codefi.network
 DOMAIN,min-api.cryptocompare.com
 
 # NFT
-DOMAIN-SUFFIX,opensea.io
 DOMAIN-SUFFIX,nftscan.com
 DOMAIN-SUFFIX,makersplace.com
 DOMAIN-SUFFIX,nonfungible.com
@@ -115,7 +86,6 @@ DOMAIN-SUFFIX,btc.com
 DOMAIN-SUFFIX,f2pool.com
 DOMAIN-SUFFIX,cbeci.org
 DOMAIN-SUFFIX,digiconomist.net
-DOMAIN-SUFFIX,1ml.com
 DOMAIN-SUFFIX,bitcoinvisuals.com
 DOMAIN-SUFFIX,crypto51.app
 DOMAIN-SUFFIX,masternodes.online
@@ -126,13 +96,11 @@ DOMAIN-SUFFIX,ewapool.net
 
 # Dapp
 DOMAIN-SUFFIX,sushi.com
-DOMAIN-SUFFIX,uniswap.org
 DOMAIN-KEYWORD,uniswap
 DOMAIN-SUFFIX,sunswap.com
 DOMAIN-SUFFIX,traderjoexyz.com
 DOMAIN-SUFFIX,raydium.io
 DOMAIN-SUFFIX,synthetix.io
-DOMAIN-SUFFIX,aave.com
 DOMAIN-SUFFIX,compound.finance
 DOMAIN-SUFFIX,makerdao.com
 DOMAIN-SUFFIX,wbtc.network
@@ -142,7 +110,6 @@ DOMAIN-SUFFIX,mdex.co
 DOMAIN-SUFFIX,mdex.one
 DOMAIN-SUFFIX,mdex.com
 DOMAIN-SUFFIX,mdex.me
-DOMAIN-SUFFIX,1inch.io
 DOMAIN-SUFFIX,kswap.finance // kswap
 
 # Loopring L2
@@ -158,77 +125,8 @@ DOMAIN-SUFFIX,zksync.io
 DOMAIN-SUFFIX,zks.app
 DOMAIN-SUFFIX,zks.org
 
-# Onekey
-# DOMAIN-SUFFIX,onekey-asset.com
-DOMAIN-SUFFIX,onekey.so
-# DOMAIN-SUFFIX,onekeytest.com
-# DOMAIN-SUFFIX,onekeycn.com
-
-# CoinGlass
-DOMAIN-SUFFIX,coinglass.com
-
 # HyperLiquid
 DOMAIN-SUFFIX,hyperliquid.xyz
 
 # Pioneerex
 DOMAIN-SUFFIX,pioneerex.org
-
-# Analysis
-DOMAIN-SUFFIX,zapper.fi
-DOMAIN-SUFFIX,qkl123.com
-DOMAIN-SUFFIX,feixiaohao.co
-DOMAIN-SUFFIX,avedex.cc
-DOMAIN-SUFFIX,aicoin.com
-DOMAIN-SUFFIX,aimoon.com
-DOMAIN-SUFFIX,coingecko.com
-DOMAIN-SUFFIX,coinmarketcap.com
-DOMAIN-SUFFIX,glassnode.com
-DOMAIN-SUFFIX,coinmetrics.io
-DOMAIN-SUFFIX,tokenview.com
-DOMAIN-SUFFIX,oklink.com
-DOMAIN-SUFFIX,blockchair.com
-DOMAIN-SUFFIX,intotheblock.com
-DOMAIN-SUFFIX,bytetree.com
-DOMAIN-SUFFIX,coin.dance
-DOMAIN-SUFFIX,defieye.io
-DOMAIN-SUFFIX,duneanalytics.com
-DOMAIN-SUFFIX,tokenterminal.com
-DOMAIN-SUFFIX,dapp.review
-DOMAIN-SUFFIX,dappradar.com
-DOMAIN-SUFFIX,stateofthedapps.com
-DOMAIN-SUFFIX,thegraph.com
-DOMAIN-SUFFIX,debank.com
-DOMAIN-SUFFIX,vfat.tools
-DOMAIN-SUFFIX,loanscan.io
-DOMAIN-SUFFIX,defirate.com
-DOMAIN-SUFFIX,defipulse.com
-DOMAIN-SUFFIX,apy999.com
-DOMAIN-SUFFIX,defieye.io
-DOMAIN-SUFFIX,dextools.io
-DOMAIN-SUFFIX,tradingview.com
-DOMAIN-SUFFIX,dcabtc.com
-DOMAIN-SUFFIX,chainalysis.com
-DOMAIN-SUFFIX,cryptoquant.com
-DOMAIN-SUFFIX,viewbase.com
-DOMAIN-SUFFIX,bitcoinity.org
-DOMAIN-SUFFIX,cryptocompare.com
-DOMAIN-SUFFIX,coincodex.com
-DOMAIN-SUFFIX,cointrendz.com
-DOMAIN-SUFFIX,coincheckup.com
-DOMAIN-SUFFIX,thetie.io
-DOMAIN-SUFFIX,cryptorank.io
-DOMAIN-SUFFIX,tradeblock.com
-DOMAIN-SUFFIX,nyctale.io
-DOMAIN-SUFFIX,dovemetrics.com
-DOMAIN-SUFFIX,cryptorank.io
-DOMAIN-SUFFIX,icodrops.com
-DOMAIN-SUFFIX,chainbroker.io
-DOMAIN-SUFFIX,crunchbase.com
-DOMAIN-SUFFIX,defillama.com
-DOMAIN-SUFFIX,coinowo.com
-DOMAIN-SUFFIX,earni.fi
-DOMAIN-SUFFIX,dropsearn.com
-DOMAIN-SUFFIX,bitcoin.it
-DOMAIN-SUFFIX,bitcoinmagazine.com
-DOMAIN-SUFFIX,blockchain.com
-DOMAIN-SUFFIX,tronscan.org
