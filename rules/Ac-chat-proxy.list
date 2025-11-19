@@ -24,6 +24,10 @@ DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursor.sh:443
 DOMAIN-SUFFIX,cursorapi.com
 
+# Google Antigravity
+DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN-SUFFIX,antigravity.google
+
 # Google Bard & Gemini
 DOMAIN-SUFFIX,auth0.com
 DOMAIN,ai.google.dev
