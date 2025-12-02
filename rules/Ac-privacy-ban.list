@@ -22,3 +22,6 @@ DOMAIN-SUFFIX,wetype.weixin.qq.com
 
 # tencent urlsec
 DOMAIN-SUFFIX,urlsec.qq.com
+
+# skip abc
+DOMAIN-SUFFIX,msmp.abchina.com.cn
