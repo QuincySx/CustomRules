@@ -3,7 +3,6 @@
   "rules": [
     {
       "domain": [
-        "uplaypc-s-ubisoft.cdn.ubi.com",
         "alibaba.cdn.steampipe.steamcontent.com",
         "lv.queniujq.cn",
         "xz.pphimalayanrt.com",
@@ -14,7 +13,8 @@
         "static-login.gog-statics.com",
         "www4-static.gog-statics.com",
         "gog-cdn-fastly.gog.com",
-        "gog-cdn.akamaized.net"
+        "gog-cdn.akamaized.net",
+        "uplaypc-s-ubisoft.cdn.ubi.com"
       ],
       "domain_suffix": [
         "kurogames.com",
@@ -33,8 +33,6 @@
         "supermariobros.com.cn",
         "leagueoflegends.cn",
         "lpl.com.cn",
-        "xboxlive.cn",
-        "bluearchive-cn.com",
         "steamserver.net",
         "steamusercontent.com",
         "csgo.wmsj.cn",
@@ -48,15 +46,17 @@
         "steampowered.com.8686c.com",
         "steamstatic.com.8686c.com",
         "steamchina.com",
-        "gstore.val.manlaxy.com"
+        "gstore.val.manlaxy.com",
+        "bluearchive-cn.com",
+        "xboxlive.cn"
       ],
       "domain_regex": [
         "^.+-mihayo\\.akamaized\\.net$",
-        "^cdn\\d-epicgames-\\d+\\.file\\.myqcloud\\.com$",
-        "^epicgames-download\\d-\\d+\\.file\\.myqcloud\\.com$",
         "^cdn-akamai-.+\\.gog-services\\.com$",
         "^gog-cdn-.+\\.footprint\\.net$",
-        "^images(-\\d)?\\.gog-statics\\.com$"
+        "^images(-\\d)?\\.gog-statics\\.com$",
+        "^cdn\\d-epicgames-\\d+\\.file\\.myqcloud\\.com$",
+        "^epicgames-download\\d-\\d+\\.file\\.myqcloud\\.com$"
       ]
     }
   ]
