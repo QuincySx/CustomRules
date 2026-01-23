@@ -2,8 +2,7 @@
   "rules": [
     {
       "domain_suffix": [
-        "3ppp.top",
-        "packyapi.com"
+        "3ppp.top"
       ]
     }
   ],
