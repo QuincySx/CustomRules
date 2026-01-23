@@ -142,6 +142,7 @@ fake-ip-filter:
   - ps.res.netease.com
   - "+.pub.3gppnetwork.org"
   - "+.3ppp.top"
+  - "+.packyapi.com"
   - "+.13th.tech"
   - "+.423down.com"
   - "+.bokecc.com"
