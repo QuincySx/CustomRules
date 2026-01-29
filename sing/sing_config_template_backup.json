@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": "info",
+    "level": "error",
     "timestamp": true
   },
   "experimental": {
@@ -72,6 +72,14 @@
       {
         "action": "route",
         "rule_set": [
+          "ac-custom-direct"
+        ],
+        "server": "localDns",
+        "strategy": "prefer_ipv6"
+      },
+      {
+        "action": "route",
+        "rule_set": [
           "ac-openai",
           "geosite-openai"
         ],
@@ -81,19 +89,11 @@
       {
         "action": "route",
         "rule_set": [
+          "geosite-lite-cn",
           "apple-cn",
           "apple-cn-cdn",
-          "microsoft-cn-cdn"
-        ],
-        "server": "localDns",
-        "client_subnet": "221.130.33.60/24",
-        "strategy": "prefer_ipv6"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "ac-china",
-          "geosite-cn"
+          "microsoft-cn-cdn",
+          "ac-china"
         ],
         "server": "localDns",
         "strategy": "prefer_ipv6"
@@ -106,7 +106,16 @@
           "ac-cdn-proxy"
         ],
         "server": "proxyDns",
+        "client_subnet": "221.130.33.60/24",
         "strategy": "ipv4_only"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "localDns",
+        "strategy": "prefer_ipv6"
       },
       {
         "type": "logical",
@@ -121,15 +130,6 @@
           }
         ],
         "server": "localDns",
-        "client_subnet": "221.130.33.60/24",
-        "strategy": "prefer_ipv6"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "geosite-geolocation-!cn"
-        ],
-        "server": "proxyDns",
         "strategy": "ipv4_only"
       }
     ],
@@ -141,18 +141,21 @@
     {
       "type": "tun",
       "tag": "tun-in",
-      "interface_name": "sing-box-utun",
+      "interface_name": "momo",
       "address": [
-        "172.19.0.1/30",
+        "172.31.0.1/30",
         "fdfe:dcba:9876::1/126"
       ],
-      "mtu": 1492,
+      "udp_timeout": "30m",
       "auto_route": true,
       "auto_redirect": true,
+      "exclude_mptcp": true,
       "strict_route": true,
-      "udp_timeout": "30m",
       "route_exclude_address_set": [
         "geoip-cn"
+      ],
+      "route_exclude_address": [
+        "5.5.5.5/32"
       ]
     }
   ],
@@ -205,6 +208,25 @@
         "🇯🇵 日本节点",
         "🇺🇲 美国节点",
         "🇺🇳 其他节点",
+        "home_kookeey_01",
+        "direct-out"
+      ],
+      "default": "🇯🇵 日本节点"
+    },
+    {
+      "tag": "🤖 Claude分流",
+      "type": "selector",
+      "outbounds": [
+        "🚀 手选节点",
+        "🇭🇰 香港自动节点",
+        "🇭🇰 香港节点",
+        "🏴‍☠️ 自建节点",
+        "🇨🇳 台湾节点",
+        "🇸🇬 狮城节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🇺🇳 其他节点",
+        "home_kookeey_01",
         "direct-out"
       ],
       "default": "🇯🇵 日本节点"
@@ -534,6 +556,8 @@
       "type": "selector",
       "outbounds": [
         "{all}",
+        "self-hk-chain-01",
+        "self-la02-anyreality-vmiss",
         "direct-out"
       ],
       "filter": [
@@ -690,26 +714,13 @@
   "route": {
     "auto_detect_interface": true,
     "final": "🐟 漏网分流",
+    "default_domain_resolver": "localDns",
     "rules": [
-      {
-        "inbound": "tun-in",
-        "action": "resolve",
-        "strategy": "prefer_ipv4"
-      },
       {
         "inbound": [
           "tun-in"
         ],
-        "action": "sniff",
-        "sniffer": [
-          "dns",
-          "bittorrent",
-          "http",
-          "tls",
-          "quic",
-          "dtls",
-          "stun"
-        ]
+        "action": "sniff"
       },
       {
         "protocol": "dns",
@@ -727,14 +738,15 @@
         "protocol": [
           "quic"
         ],
-        "action": "route",
-        "outbound": "reject"
+        "action": "reject",
+        "method": "default"
       },
       {
         "rule_set": [
           "ac-privacy-ban",
           "ac-scam-ban",
-          "ac-httpdns-ban"
+          "ac-httpdns-ban",
+          "geosite-category-httpdns-cn"
         ],
         "outbound": "🍃 应用净化分流"
       },
@@ -752,7 +764,14 @@
       },
       {
         "ip_is_private": true,
+        "action": "bypass",
         "outbound": "direct-out"
+      },
+      {
+        "rule_set": [
+          "ac-claude"
+        ],
+        "outbound": "🤖 Claude分流"
       },
       {
         "rule_set": [
@@ -762,7 +781,22 @@
         "outbound": "🤖 GPT分流"
       },
       {
+        "action": "bypass",
+        "outbound": "direct-out",
+        "rule_set": "geoip-cn"
+      },
+      {
+        "domain_suffix": [
+          "google.com",
+          "google.dev",
+          "googleapis.com"
+        ],
+        "outbound": "🚀 手选节点"
+      },
+      {
+        "action": "bypass",
         "rule_set": [
+          "geosite-lite-cn",
           "ac-china",
           "ac-custom-direct"
         ],
@@ -785,7 +819,8 @@
       {
         "rule_set": [
           "apple-cn",
-          "apple-cn-cdn"
+          "apple-cn-cdn",
+          "geosite-apple-cn"
         ],
         "outbound": "🍎 直连分流"
       },
@@ -848,14 +883,29 @@
       {
         "rule_set": [
           "ac-xbox-proxy",
+          "ac-nintendo-proxy",
           "geosite-category-games"
         ],
         "outbound": "🎮 分流"
       },
       {
         "rule_set": [
-          "geoip-cn",
           "geosite-cn"
+        ],
+        "action": "bypass",
+        "outbound": "direct-out"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geoip-cn"
+          },
+          {
+            "rule_set": "geosite-geolocation-!cn",
+            "invert": true
+          }
         ],
         "outbound": "direct-out"
       }
@@ -866,6 +916,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-chat-proxy.srs",
+        "download_detour": "direct-out"
+      },
+      {
+        "tag": "ac-claude",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-claude-proxy.srs",
         "download_detour": "direct-out"
       },
       {
@@ -904,10 +961,10 @@
         "download_detour": "direct-out"
       },
       {
-        "tag": "ac-xbox-proxy",
+        "tag": "ac-nintendo-proxy",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-xbox-proxy.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-nintendo-proxy.srs",
         "download_detour": "direct-out"
       },
       {
@@ -932,6 +989,13 @@
         "download_detour": "direct-out"
       },
       {
+        "tag": "ac-xbox-proxy",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-xbox-proxy.srs",
+        "download_detour": "direct-out"
+      },
+      {
         "tag": "ac-cdn-proxy",
         "type": "remote",
         "format": "binary",
@@ -943,6 +1007,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-httpdns-ban.srs",
+        "download_detour": "direct-out"
+      },
+      {
+        "tag": "geosite-category-httpdns-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/category-httpdns-cn.srs",
         "download_detour": "direct-out"
       },
       {
@@ -1016,6 +1087,13 @@
         "download_detour": "direct-out"
       },
       {
+        "tag": "geosite-apple-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/apple@cn.srs",
+        "download_detour": "direct-out"
+      },
+      {
         "tag": "geosite-apple-proxy",
         "type": "remote",
         "format": "binary",
@@ -1047,7 +1125,7 @@
         "tag": "geosite-category-games",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/category-games-!cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/category-games.srs",
         "download_detour": "direct-out"
       },
       {
@@ -1082,7 +1160,14 @@
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Bak-ChinaMax_Domain.srs",
+        "download_detour": "direct-out"
+      },
+      {
+        "tag": "geosite-lite-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Bak-GeositeCN_Domain.srs",
         "download_detour": "direct-out"
       },
       {
