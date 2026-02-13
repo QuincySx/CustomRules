@@ -75,16 +75,17 @@ def main():
         print("Error: one of the domain lists is not a list")
         return
 
-    _cls = _K2.lower()
-    ensure_directory(f"repo/{_cls}")
+    _out = _d("ZmFrZWlw")
+    _out_dir = f"repo/config/{_out}"
+    ensure_directory(_out_dir)
 
     full_domains = oc_domains + custom_chain_domains + chain_domains + custom_domains
     lite_domains = oc_domains + custom_chain_domains + custom_domains
 
-    write_yaml_content(full_domains, os.path.join(f"repo/{_cls}", f"{_FIP}_filter_domains.yaml"))
+    write_yaml_content(full_domains, os.path.join(_out_dir, f"{_FIP}_filter_domains.yaml"))
 
-    write_list_content(full_domains, os.path.join(f"repo/{_cls}", f"{_FIP}_filter_domains.list"))
-    write_list_content(lite_domains, os.path.join(f"repo/{_cls}", f"{_FIP}_filter_domains_lite.list"))
+    write_list_content(full_domains, os.path.join(_out_dir, f"{_FIP}_filter_domains.list"))
+    write_list_content(lite_domains, os.path.join(_out_dir, f"{_FIP}_filter_domains_lite.list"))
 
 
 if __name__ == "__main__":
