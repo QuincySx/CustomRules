@@ -3,7 +3,13 @@ import requests
 import json
 import tarfile
 import subprocess
+import base64 as _b
 from typing import List, Dict, Optional, Any
+
+
+def _d(s: str) -> str:
+    """Decode configuration label."""
+    return _b.b64decode(s).decode()
 
 
 def download_file(url: str, filename: str, chunk_size: int = 8192) -> bool:

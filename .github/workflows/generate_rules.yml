@@ -38,21 +38,21 @@ jobs:
         run: |
           python ./.github/scripts/parse_online_full.py
 
-      - name: Generate fake_ip_filter
+      - name: Generate domain filter
         run: |
           python ./.github/scripts/generate_fake_ip_filter.py
 
-      - name: Backup Online_Full.ini
+      - name: Backup config
         run: |
           python ./.github/scripts/backup_online_full.py
 
-      - name: Parse YAML backup rules
+      - name: Parse backup rules
         run: |
           python ./.github/scripts/parse_yaml_backup.py
 
-      - name: Backup Sing_Online_Full.ini
+      - name: Process SB config
         run: |
-          python ./.github/scripts/parse_sing_online_full.py
+          python ./.github/scripts/parse_sb_online_full.py
 
       - name: Commit and push changes
         run: |

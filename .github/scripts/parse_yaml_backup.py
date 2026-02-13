@@ -139,7 +139,6 @@ def process_yaml_backup(ini_path, output_dir):
 
 
 if __name__ == "__main__":
-    # 下载 sing-box 编译工具
     download_convert_bin()
 
     # 处理 yaml_backup.ini

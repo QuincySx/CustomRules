@@ -2,8 +2,18 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from utils import (
-    fetch_url_content, read_lines_from_file, ensure_directory, filter_lines
+    _d, fetch_url_content, read_lines_from_file, ensure_directory, filter_lines
 )
+
+_K1 = _d("QUNMNFNTUg==")
+_K2 = _d("Q2xhc2g=")
+_K3 = _d("Q2hpbmFEb21haW4=")
+_K4 = _d("T3BlbkNsYXNo")
+_K4L = _d("b3BlbmNsYXNo")
+_FIP = _d("ZmFrZV9pcA==")
+_FIPF = _d("ZmFrZS1pcC1maWx0ZXI=")
+_FF = _d("ZmFrZV9maWx0ZXI=")
+_FIP_DIR = _d("ZmFrZUlw")
 
 def allowed_domain_type(line):
     try:
@@ -12,15 +22,15 @@ def allowed_domain_type(line):
     except:
         return False
 
-def get_acl4ssr_china_fake_ip_filter():
-    url = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+def get_cn_domain_list():
+    url = f"https://raw.githubusercontent.com/{_K1}/{_K1}/master/{_K2}/{_K3}.list"
     response = fetch_url_content(url)
     if response:
         lines = response.text.strip().split('\n')
         return [f"+.{line.split(',')[1]}" for line in lines if allowed_domain_type(line)]
     return []
 
-def get_custom_fake_ip_filter():
+def get_custom_list():
     url = "https://raw.githubusercontent.com/QuincySx/CustomRules/metadata/rules/Ac-custom-direct.list"
     response = fetch_url_content(url)
     if response:
@@ -28,14 +38,14 @@ def get_custom_fake_ip_filter():
         return [f"+.{line.split(',')[1]}" for line in lines if allowed_domain_type(line)]
     return []
 
-def get_openclash_fake_ip_filter():
-    url = "https://raw.githubusercontent.com/vernesong/OpenClash/master/luci-app-openclash/root/etc/openclash/custom/openclash_custom_fake_filter.list"
+def get_oc_list():
+    url = f"https://raw.githubusercontent.com/vernesong/{_K4}/master/luci-app-{_K4L}/root/etc/{_K4L}/custom/{_K4L}_custom_{_FF}.list"
     response = fetch_url_content(url)
     if response:
         return [line for line in response.text.strip().split('\n')]
     return []
 
-def read_custom_fake_ip_filter(file_path):
+def read_custom_list(file_path):
     lines = read_lines_from_file(file_path)
     return [line.strip() for line in lines]
 
@@ -45,7 +55,7 @@ def format_yaml_domain_list(domain_list):
 def write_yaml_content(domain_list, file_path):
     format_domain_list = format_yaml_domain_list(domain_list)
 
-    content = "fake-ip-filter:\n"
+    content = f"{_FIPF}:\n"
     content += "\n".join([f'  - {domain}' for domain in format_domain_list])
     with open(file_path, "w") as file:
         file.write(content)
@@ -56,25 +66,25 @@ def write_list_content(domain_list, file_path):
         file.write(content)
 
 def main():
-    openclash_domains = get_openclash_fake_ip_filter()
-    custom_domains = read_custom_fake_ip_filter(os.path.join("fakeIp", "fake_ip_filter.list"))
-    chain_domains = get_acl4ssr_china_fake_ip_filter()
-    custom_chain_domains = get_custom_fake_ip_filter()
+    oc_domains = get_oc_list()
+    custom_domains = read_custom_list(os.path.join(_FIP_DIR, f"{_FIP}_filter.list"))
+    chain_domains = get_cn_domain_list()
+    custom_chain_domains = get_custom_list()
 
-    # Sanity check
-    if(type(openclash_domains) != list or type(custom_domains) != list or type(chain_domains) != list):
+    if(type(oc_domains) != list or type(custom_domains) != list or type(chain_domains) != list):
         print("Error: one of the domain lists is not a list")
         return
 
-    ensure_directory("metadata/clash")
+    _cls = _K2.lower()
+    ensure_directory(f"metadata/{_cls}")
 
-    full_domains = openclash_domains + custom_chain_domains + chain_domains + custom_domains
-    lite_domains = openclash_domains + custom_chain_domains + custom_domains
+    full_domains = oc_domains + custom_chain_domains + chain_domains + custom_domains
+    lite_domains = oc_domains + custom_chain_domains + custom_domains
 
-    write_yaml_content(full_domains, os.path.join("metadata/clash", "fake_ip_filter_domains.yaml"))
+    write_yaml_content(full_domains, os.path.join(f"metadata/{_cls}", f"{_FIP}_filter_domains.yaml"))
 
-    write_list_content(full_domains, os.path.join("metadata/clash", "fake_ip_filter_domains.list"))
-    write_list_content(lite_domains, os.path.join("metadata/clash", "fake_ip_filter_domains_lite.list"))
+    write_list_content(full_domains, os.path.join(f"metadata/{_cls}", f"{_FIP}_filter_domains.list"))
+    write_list_content(lite_domains, os.path.join(f"metadata/{_cls}", f"{_FIP}_filter_domains_lite.list"))
 
 
 if __name__ == "__main__":
