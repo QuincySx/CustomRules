@@ -4,18 +4,15 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * 1'
-  push:
-    branches:
-      - master
 
 jobs:
   combined-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master branch
+      - name: Checkout main branch
         uses: actions/checkout@v3
         with:
-          ref: master
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v3
@@ -32,7 +29,7 @@ jobs:
         with:
           ref: metadata
           clean: false
-          path: metadata
+          path: repo
 
       - name: Parse and download metadata
         run: |
@@ -40,7 +37,7 @@ jobs:
 
       - name: Generate domain filter
         run: |
-          python ./.github/scripts/generate_fake_ip_filter.py
+          python ./.github/scripts/generate_fa_ke_ip_filter.py
 
       - name: Backup config
         run: |
@@ -56,7 +53,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          cd metadata
+          cd repo
           CURRENT_TIME=$(date '+%Y-%m-%d %H:%M:%S')
           git config --local user.email "13297229+QuincySx@users.noreply.github.com"
           git config --local user.name "GitHub Action"

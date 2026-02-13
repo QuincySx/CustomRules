@@ -8,12 +8,12 @@ from utils import (
 )
 
 def main():
-    content = read_lines_from_file("Online_Full.ini")
+    content = read_lines_from_file("repo/source/Online_Full.ini")
     if not content:
         return
 
     rules_pattern = re.compile(r"ruleset=.*?,(https://.*?\.list)")
-    ensure_directory("metadata/rules")
+    ensure_directory("repo/rules")
 
     for line in content:
         if not line.startswith(";"):
@@ -22,7 +22,7 @@ def main():
                 response = fetch_url_content(url)
                 if response:
                     filename = get_filename_from_url(url)
-                    filepath = f"metadata/rules/{filename}"
+                    filepath = f"repo/rules/{filename}"
                     save_content_to_file(response.content, filepath)
 
 

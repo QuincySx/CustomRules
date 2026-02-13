@@ -8,12 +8,12 @@ from utils import (
 )
 
 def main():
-    content = read_lines_from_file("Online_Full.ini")
+    content = read_lines_from_file("repo/source/Online_Full.ini")
     if not content:
         return
 
     ruleset_pattern = re.compile(r"ruleset=.*?,(https://.*?\.list)")
-    ensure_directory("metadata")
+    ensure_directory("repo")
 
     new_content = []
 
@@ -28,7 +28,7 @@ def main():
                     line = line.replace(url, new_url)
         new_content.append(line)
 
-    write_lines_to_file(new_content, "metadata/Online_Full_Back.ini")
+    write_lines_to_file(new_content, "repo/Online_Full_Back.ini")
 
 
 if __name__ == "__main__":

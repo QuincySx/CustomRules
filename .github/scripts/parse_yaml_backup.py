@@ -9,7 +9,7 @@ from utils import (
     write_lines_to_file, save_json_to_file, run_command,
     get_base_name_and_extension
 )
-from parse_sing_online_full import download_convert_bin, process_json_to_srs, convert_list_to_json
+from parse_sb_online_full import download_convert_bin, process_json_to_srs, convert_list_to_json
 
 PREFIX = "Bak-"
 
@@ -142,4 +142,4 @@ if __name__ == "__main__":
     download_convert_bin()
 
     # 处理 yaml_backup.ini
-    process_yaml_backup("yaml_backup.ini", "metadata")
+    process_yaml_backup("repo/source/yaml_backup.ini", "repo")

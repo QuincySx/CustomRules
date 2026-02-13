@@ -166,5 +166,5 @@ def process_ac_files(directory, output_dir='.'):
 
 if __name__ == "__main__":
     download_convert_bin()
-    process_ac_files("metadata/rules", "metadata/sing/rules")
-    backup_rule_set_and_download("sing_config_template.json", "metadata/sing")
+    process_ac_files("repo/rules", "repo/sing/rules")
+    backup_rule_set_and_download("repo/source/sing_config_template.json", "repo/sing")
