@@ -915,273 +915,273 @@
         "tag": "ac-openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-chat-proxy.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-chat-proxy.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-claude",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-claude-proxy.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-claude-proxy.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-china",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-china.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-china.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-custom-direct",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-custom-direct.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-custom-direct.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-custom-proxy",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-custom-proxy.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-custom-proxy.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-exchange",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-exchange.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-exchange.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-game-download",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-game-download.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-game-download.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-nintendo-proxy",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-nintendo-proxy.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-nintendo-proxy.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-privacy-ban",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-privacy-ban.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-privacy-ban.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-scam-ban",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-scam-ban.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-scam-ban.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-steam-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-steam-cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-steam-cn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-xbox-proxy",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-xbox-proxy.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-xbox-proxy.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-cdn-proxy",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-cdn-proxy.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-cdn-proxy.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "ac-httpdns-ban",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-httpdns-ban.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-httpdns-ban.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-category-httpdns-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/category-httpdns-cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/category-httpdns-cn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-category-ads-all",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/category-ads-all.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/category-ads-all.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/OpenAI.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/OpenAI.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-github",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/github.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/github.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-spotify",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/spotify.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/spotify.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-tiktok",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/tiktok.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/tiktok.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geoip-netflix",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geoip/netflix.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geoip/netflix.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/netflix.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/netflix.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-disney",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/disney.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/disney.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "apple-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/apple_cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/apple_cn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "apple-cn-cdn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/domainset/apple_cdn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/domainset/apple_cdn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-apple-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/apple@cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/apple@cn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-apple-proxy",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Ac-apple-proxy.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Ac-apple-proxy.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-microsoft",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/microsoft.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/microsoft.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "microsoft-cn-cdn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/microsoft_cdn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/microsoft_cdn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-microsoft-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/microsoft@cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/microsoft@cn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-category-games",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/category-games.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/category-games.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-category-cryptocurrency",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/category-cryptocurrency.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/category-cryptocurrency.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-games-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/category-games@cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/category-games@cn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-geolocation-!cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geosite/geolocation-!cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geosite/geolocation-!cn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/geoip/cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/geoip/cn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Bak-ChinaMax_Domain.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Bak-ChinaMax_Domain.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "geosite-lite-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/Bak-GeositeCN_Domain.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/Bak-GeositeCN_Domain.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "proxy-domain-cdn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/domainset/cdn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/domainset/cdn.srs",
         "download_detour": "direct-out"
       },
       {
         "tag": "proxy-ip-cdn",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@metadata/sing/rules/cdn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@metadata/sing/rules/cdn.srs",
         "download_detour": "direct-out"
       }
     ]

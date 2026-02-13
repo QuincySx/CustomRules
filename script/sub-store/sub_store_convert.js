@@ -1,4 +1,4 @@
-// https://raw.githubusercontent.com/QuincySx/CustomRules/refs/heads/main/sub_store_sing_box_convert.js#type=组合订阅&name=机场
+// https://raw.githubusercontent.com/QuincySx/dotfiles/refs/heads/main/sub_store_sing_box_convert.js#type=组合订阅&name=机场
 
 
 // type 组合订阅
