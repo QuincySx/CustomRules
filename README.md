@@ -1,19 +1,21 @@
 # dotfiles
 
-A collection of personal dotfiles and editor configuration backups.
+Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 
-Mainly used to sync settings across multiple machines via GitHub Actions.
+## Install
+
+```bash
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply QuincySx/dotfiles
+```
 
 ## What's included
 
-- Editor preferences (formatting, linting)
-- Git hooks and commit templates
-- Shell aliases and environment variables
+- Fish shell config + Dracula theme
+- Zsh config
+- Starship prompt
 
-## Usage
+## Update
 
-Fork this repo and modify the config files to match your own setup. The GitHub Action will periodically check and sync updates.
-
-## License
-
-MIT
+```bash
+chezmoi update
+```

@@ -1,0 +1,31 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+
+end
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+set GPG_TTY $(tty)
+
+# RTX Version Manager
+mise activate fish | source
+
+# set -g -x FLUTTER_ROOT "$(mise where flutter)"
+# set -g -x GOROOT "$(mise where golang)"
+
+set -g -x ANDROID_SDK_ROOT {{ .chezmoi.homeDir }}/Library/Android/sdk
+set -g -x ANDROID_HOME {{ .chezmoi.homeDir }}/Library/Android/sdk
+set -g -x PATH $ANDROID_HOME/tools:$ANDROID_HOME/platform-tools $PATH
+
+# StarShip Init
+starship init fish | source
+
+# Scmpuff Init
+scmpuff init --shell=fish | source
+
+alias fixapp="sudo /usr/bin/xattr -c "
+
+fish_config theme choose "Dracula Official"
+
+# Added by OrbStack: command-line tools and integration
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :

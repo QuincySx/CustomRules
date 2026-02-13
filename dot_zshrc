@@ -1,0 +1,3 @@
+. ~/.config/zsh/.zsh-env
+
+export PATH="$HOME/.local/bin:$PATH"

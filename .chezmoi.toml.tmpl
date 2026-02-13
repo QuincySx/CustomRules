@@ -1,0 +1,8 @@
+{{- $email := promptStringOnce . "email" "Email address" -}}
+{{- $name := promptStringOnce . "name" "Full name" -}}
+{{- $shell := promptChoiceOnce . "shell" "Default shell" (list "fish" "zsh") -}}
+
+[data]
+    name = {{ $name | quote }}
+    email = {{ $email | quote }}
+    shell = {{ $shell | quote }}

@@ -1,0 +1,67 @@
+format = """[    ](bg:#585858)[](#585858) $all"""
+# right_format ="[](#585858)[ $cmd_duration$time  ](bg:#585858)"
+right_format ="$cmd_duration$time"
+command_timeout = 100
+
+[cmd_duration]
+show_milliseconds = false
+format = "$duration  "
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[character]
+error_symbol = "[✖](bold red) "
+success_symbol = "[❯](bold green)"
+
+[directory]
+truncation_length = 6
+
+[package]
+disabled = false
+
+[status]
+style = "red"
+symbol = "💥 "
+format = '[\[$symbol$status\]]($style) '
+disabled = false
+
+[git_branch]
+symbol = " "
+truncation_length = 20
+truncation_symbol = "..."
+disabled = false
+style = "bold purple"
+
+[git_state]
+cherry_pick = "CHERRY PICKING"
+rebase = "REBASING"
+merge = "MERGING"
+revert = "REVERTING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style = "bold yellow"
+disabled = false
+
+[git_status]
+format='\[[$stashed](cyan)[$conflicted$deleted](red)[$renamed$modified](yellow)[$staged](blue)[$untracked](green)\] '
+conflicted="×"
+ahead="${ahead_count}"
+behind="${behind_count}"
+diverged="ﮙ ${count}"
+up_to_date=" ${count}"
+untracked="+${count}"
+stashed="⚑${count}"
+modified="✎${count}"
+staged="⚑${count}"
+renamed="✎${count}"
+deleted="﫧${count}"
+disabled = false
+ignore_submodules = true
