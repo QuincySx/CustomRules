@@ -1,0 +1,28 @@
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# mise Version Manager
+eval "$(mise activate zsh)"
+
+# GPG 配置
+export GPG_TTY=$(tty)
+
+# export FLUTTER_ROOT="$(mise where flutter)"
+
+# kaku
+[[ -f "$HOME/.config/kaku/zsh/kaku.zsh" ]] && source "$HOME/.config/kaku/zsh/kaku.zsh" # Kaku Shell Integration
+
+# Android SDK 路径配置
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+
+export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
+
+# Scmpuff
+eval "$(scmpuff init --shell=zsh)"
+
+# Alias 别名
+alias fixapp="sudo /usr/bin/xattr -c"
+
+# Orbstack
+[[ -f ~/.orbstack/shell/init.zsh ]] && source ~/.orbstack/shell/init.zsh 2>/dev/null || :

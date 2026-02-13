@@ -1,0 +1,52 @@
+# This is Git's per-user configuration file.
+[user]
+	# Please adapt and uncomment the following lines:
+	name = ByteZhang
+	email = ByteZhang@protonmail.com
+[commit]
+	gpgsign = true
+
+[diff]
+    tool = kitty
+    guitool = kitty.gui
+[difftool]
+    prompt = false
+    trustExitCode = true
+[difftool "kitty"]
+    cmd = kitten diff $LOCAL $REMOTE
+[difftool "kitty.gui"]
+    cmd = kitten diff $LOCAL $REMOTE
+
+[icdiff]
+	options = --highlight --line-numbers
+[includeIf "gitdir:~/Development/OnekeyWork/"]
+    path = ~/.config/git/config_onekey
+[includeIf "gitdir:~/Development/QuincyWork/"]
+    path = ~/.config/git/config_quincy
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset | %ad | %Cblue%d%Creset %s %Cgreen(%an)%Creset' --abbrev-commit --date=short
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[core]
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	pager = less --mouse --wheel-lines=3 -R -F -X
+	line-numbers = true
+	side-by-side = true
+	line-fill-method = spaces
+	syntax-theme = Coldark-Dark
+	file-style = omit
+	file-decoration-style = omit
+	hunk-header-style = file line-number syntax
