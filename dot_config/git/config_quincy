@@ -1,8 +1,0 @@
-# This is Git's per-user configuration file.
-[user]
-	name = QuincySx
-	email = 13297229+QuincySx@users.noreply.github.com
-	# signingkey = A987F8DED7F3E0D60736E59730FB6C583AB7F3C3
-	useConfigOnly = true
-[commit]
-	gpgsign = false

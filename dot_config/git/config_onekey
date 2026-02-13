@@ -1,7 +1,0 @@
-# This is Git's per-user configuration file.
-[user]
-	name = ByteZhang
-	email = ByteZhang@protonmail.com
-	signingkey = 30E2F93FC8E53CD5CC8736AD4068B0FF88B4A176
-[credential]
-	username=ByteZhang1024

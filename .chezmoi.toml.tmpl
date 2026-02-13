@@ -1,8 +1,44 @@
-{{- $email := promptStringOnce . "email" "Email address" -}}
-{{- $name := promptStringOnce . "name" "Full name" -}}
+{{- $name := promptStringOnce . "name" "Git default name" -}}
+{{- $email := promptStringOnce . "email" "Git default email" -}}
 {{- $shell := promptChoiceOnce . "shell" "Default shell" (list "fish" "zsh") -}}
+{{- $gpg_sign := promptBoolOnce . "gpg_sign" "Enable GPG commit signing" -}}
+{{- $gpg_key := "" -}}
+{{- if $gpg_sign -}}
+{{-   $gpg_key = promptStringOnce . "gpg_key" "GPG signing key ID" -}}
+{{- end -}}
+
+{{- $work_profiles := promptBoolOnce . "work_profiles" "Enable multiple git work profiles" -}}
+{{- $work1_name := "" -}}
+{{- $work1_email := "" -}}
+{{- $work1_dir := "" -}}
+{{- $work1_gpg_key := "" -}}
+{{- $work1_credential := "" -}}
+{{- $work2_name := "" -}}
+{{- $work2_email := "" -}}
+{{- $work2_dir := "" -}}
+{{- if $work_profiles -}}
+{{-   $work1_dir = promptStringOnce . "work1_dir" "Work profile 1 - git directory (e.g. ~/Dev/Work1/)" -}}
+{{-   $work1_name = promptStringOnce . "work1_name" "Work profile 1 - git name" -}}
+{{-   $work1_email = promptStringOnce . "work1_email" "Work profile 1 - git email" -}}
+{{-   $work1_gpg_key = promptStringOnce . "work1_gpg_key" "Work profile 1 - GPG key (empty to skip)" -}}
+{{-   $work1_credential = promptStringOnce . "work1_credential" "Work profile 1 - credential username (empty to skip)" -}}
+{{-   $work2_dir = promptStringOnce . "work2_dir" "Work profile 2 - git directory (e.g. ~/Dev/Work2/)" -}}
+{{-   $work2_name = promptStringOnce . "work2_name" "Work profile 2 - git name" -}}
+{{-   $work2_email = promptStringOnce . "work2_email" "Work profile 2 - git email" -}}
+{{- end -}}
 
 [data]
     name = {{ $name | quote }}
     email = {{ $email | quote }}
     shell = {{ $shell | quote }}
+    gpg_sign = {{ $gpg_sign }}
+    gpg_key = {{ $gpg_key | quote }}
+    work_profiles = {{ $work_profiles }}
+    work1_dir = {{ $work1_dir | quote }}
+    work1_name = {{ $work1_name | quote }}
+    work1_email = {{ $work1_email | quote }}
+    work1_gpg_key = {{ $work1_gpg_key | quote }}
+    work1_credential = {{ $work1_credential | quote }}
+    work2_dir = {{ $work2_dir | quote }}
+    work2_name = {{ $work2_name | quote }}
+    work2_email = {{ $work2_email | quote }}

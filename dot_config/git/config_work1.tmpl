@@ -1,0 +1,12 @@
+{{- if and .work_profiles (ne .work1_dir "") -}}
+[user]
+	name = {{ .work1_name }}
+	email = {{ .work1_email }}
+{{- if ne .work1_gpg_key "" }}
+	signingkey = {{ .work1_gpg_key }}
+{{- end }}
+{{- if ne .work1_credential "" }}
+[credential]
+	username = {{ .work1_credential }}
+{{- end }}
+{{- end }}

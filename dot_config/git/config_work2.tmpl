@@ -1,0 +1,8 @@
+{{- if and .work_profiles (ne .work2_dir "") -}}
+[user]
+	name = {{ .work2_name }}
+	email = {{ .work2_email }}
+	useConfigOnly = true
+[commit]
+	gpgsign = false
+{{- end }}
