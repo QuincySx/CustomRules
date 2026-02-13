@@ -31,7 +31,7 @@ def get_cn_domain_list():
     return []
 
 def get_custom_list():
-    url = "https://raw.githubusercontent.com/QuincySx/CustomRules/metadata/rules/Ac-custom-direct.list"
+    url = "https://raw.githubusercontent.com/QuincySx/dotfiles/metadata/rules/Ac-custom-direct.list"
     response = fetch_url_content(url)
     if response:
         lines = response.text.strip().split('\n')

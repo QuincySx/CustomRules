@@ -1,4 +1,4 @@
-# CustomRules
+# dotfiles
 
 A collection of personal dotfiles and editor configuration backups.
 

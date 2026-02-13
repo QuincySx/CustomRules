@@ -24,7 +24,7 @@ def main():
                 response = fetch_url_content(url)
                 if response:
                     filename = get_filename_from_url(url)
-                    new_url = f"https://raw.githubusercontent.com/QuincySx/CustomRules/metadata/rules/{filename}"
+                    new_url = f"https://raw.githubusercontent.com/QuincySx/dotfiles/metadata/rules/{filename}"
                     line = line.replace(url, new_url)
         new_content.append(line)
 

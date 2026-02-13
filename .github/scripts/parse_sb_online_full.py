@@ -106,7 +106,7 @@ def backup_rule_set_and_download(input_file, output_dir='.'):
             if not filename.startswith(IGNORE_PREFIXES) and filename.endswith('.srs'):
                 new_filepath = download_and_convert_rule(url, rules_dir)
                 if new_filepath:
-                    rule['url'] = f"https://testingcf.jsdelivr.net/gh/QuincySx/CustomRules@{new_filepath}"
+                    rule['url'] = f"https://testingcf.jsdelivr.net/gh/QuincySx/dotfiles@{new_filepath}"
 
             if new_filepath:
                 rule['format'] = 'binary' if new_filepath.endswith('.srs') else 'source'
