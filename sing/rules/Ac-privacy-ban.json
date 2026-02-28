@@ -18,6 +18,10 @@
         "wetype.weixin.qq.com",
         "urlsec.qq.com",
         "msmp.abchina.com.cn"
+      ],
+      "ip_cidr": [
+        "95.161.76.100/31",
+        "91.108.56.107/32"
       ]
     }
   ],

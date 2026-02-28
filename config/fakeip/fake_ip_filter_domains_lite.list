@@ -179,6 +179,7 @@ ps.res.netease.com
 #geosite:apple-cn
 #geosite:google-cn
 +.3ppp.top
++.icloud-content.com
 #放行 Github
 github.com
 *.github.com
