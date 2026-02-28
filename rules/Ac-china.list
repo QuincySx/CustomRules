@@ -123,3 +123,6 @@ DOMAIN-SUFFIX,tingyun.com
 # 数美科技风控
 DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,ishumei.com
+
+# CloudFront, 能直联
+DOMAIN-SUFFIX,xethub.hf.co
